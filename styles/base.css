@@ -1,0 +1,99 @@
+header {
+    background-color: rgba(17, 56, 129, 0.727);
+}
+
+header div {
+    /* background-color: rgba(17, 56, 129, 0.727); */
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    padding: 20px;
+}
+
+header img {
+    grid-column: 1/2;
+    width: 90px;
+    border-radius: 1%;
+    padding-left: 65%;
+    padding-bottom: 20px;
+
+}
+
+h1 {
+    text-align: left;
+    font-size: 45px;
+    padding-left: 30px;
+    grid-column: 2/3;
+    color: #c3c1cc;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+/* nav */
+nav {
+    background-color: rgb(7, 42, 56);
+    padding: 10px;
+    text-align: center;
+    margin-top: -20px;
+}
+
+nav ul {
+    list-style-type: none;
+    text-align: center;
+    margin: -10px;
+    padding: 2%;
+}
+
+nav ul li {
+    margin-top: 0px;
+    padding: 8px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #c3c1cc;
+    font-size: 19px;
+}
+
+nav ul li a:hover {
+    color: #bae58cd7;
+}
+
+/* h2 */
+h2 {
+    text-align: center;
+    text-justify: auto;
+    /* text-decoration: underline; */
+    margin-bottom: -20px;
+}
+
+/* cards */
+.card {
+    padding: 15px;
+}
+
+.card h3 {
+    background-color: rgba(17, 56, 129, 0.727);
+    color: #c3c1cc;
+    text-align: center;
+    font-size: 18px;
+    padding: 8px;
+}
+
+/* footer */
+footer {
+    background-color: rgba(17, 56, 129, 0.727);
+    padding: 10px;
+    text-align: center;
+}
+
+#firstParagraph {
+    font-size: 14px;
+    color: #c3c1cc;
+}
+
+#lastParagraph {
+    font-size: 12px;
+    color: #bae58cd7;
+    margin-top: 5px;
+}
