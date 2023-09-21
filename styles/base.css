@@ -6,7 +6,8 @@ body {
 
 header {
     background-color: #325286;
-
+    border-radius: 20px;
+    margin-top: 10px;
 }
 
 header div {
@@ -17,7 +18,7 @@ header div {
     align-items: center;
     justify-content: center;
     padding: 10px;
-    padding-bottom: 20px;
+    padding-bottom: 15px;
 }
 
 header img {
@@ -45,6 +46,8 @@ nav {
     padding: 10px;
     text-align: center;
     margin-top: -20px;
+    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 15px;
 }
 
 nav ul {
@@ -69,17 +72,24 @@ nav ul li a:hover {
     color: #bae58cd7;
 }
 
+main {
+    margin-left: 3%;
+    margin-right: 3%;
+}
+
 /* h2 */
 h2 {
     text-align: center;
-    text-justify: auto;
+    border-style: solid;
+    border-width: 0 0 2px 0;
+    border-bottom-color: #325286;
     /* text-decoration: underline; */
-    margin-bottom: -20px;
 }
 
 /* cards */
 .card {
-    padding: 15px;
+    box-shadow: 4px 4px 10px #325286;
+    border-radius: 10px;
 }
 
 .card h3 {
@@ -87,7 +97,11 @@ h2 {
     color: #ffffff;
     text-align: center;
     font-size: 18px;
-    padding: 8px;
+    margin-top: 0px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    padding-top: 15px;
+    padding-bottom: 15px;
 }
 
 /* footer */
@@ -95,6 +109,9 @@ footer {
     background-color: #325286;
     padding: 10px;
     text-align: center;
+    border-radius: 20px;
+    margin-top: 10px;
+
 }
 
 #firstParagraph {
