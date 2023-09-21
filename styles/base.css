@@ -1,5 +1,10 @@
+body {
+    width: 80%;
+    margin: 0 auto;
+}
+
 header {
-    background-color: rgba(17, 56, 129, 0.727);
+    background-color: #325286;
 }
 
 header div {
@@ -24,7 +29,7 @@ h1 {
     font-size: 45px;
     padding-left: 30px;
     grid-column: 2/3;
-    color: #c3c1cc;
+    color: #ffffff;
     margin-top: auto;
     margin-bottom: auto;
 }
@@ -51,7 +56,7 @@ nav ul li {
 
 nav ul li a {
     text-decoration: none;
-    color: #c3c1cc;
+    color: #ffffff;
     font-size: 19px;
 }
 
@@ -73,8 +78,8 @@ h2 {
 }
 
 .card h3 {
-    background-color: rgba(17, 56, 129, 0.727);
-    color: #c3c1cc;
+    background-color: #325286;
+    color: #ffffff;
     text-align: center;
     font-size: 18px;
     padding: 8px;
@@ -82,18 +87,18 @@ h2 {
 
 /* footer */
 footer {
-    background-color: rgba(17, 56, 129, 0.727);
+    background-color: #325286;
     padding: 10px;
     text-align: center;
 }
 
 #firstParagraph {
     font-size: 14px;
-    color: #c3c1cc;
+    color: #ffffff;
 }
 
 #lastParagraph {
     font-size: 12px;
-    color: #bae58cd7;
+    color: #fbff00;
     margin-top: 5px;
 }
