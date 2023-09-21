@@ -104,6 +104,10 @@ h2 {
     padding-bottom: 15px;
 }
 
+.card ul {
+    padding-bottom: 9px;
+}
+
 /* footer */
 footer {
     background-color: #325286;
