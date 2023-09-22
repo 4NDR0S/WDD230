@@ -1,0 +1,72 @@
+body {
+    width: 95%;
+    margin: 0 auto;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+header {
+    background-color: #325286;
+    border-radius: 5px;
+    margin-top: 10px;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: white;
+}
+
+h1 {
+    font-size: 50px;
+}
+
+#name {
+    font-size: 40px;
+}
+
+main {
+    margin: 1.5%;
+}
+
+.card {
+    background-color: #bae58cd7;
+    padding-top: 0;
+    border-style: solid;
+    border-color: #325286;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+.card h2 {
+    background-color: #325286;
+    color: white;
+    margin-top: 0;
+    padding: 10px;
+    padding-left: 5%;
+}
+
+.card div {
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+.images {
+    display: flex;
+    justify-content: center;
+}
+
+.card div img {
+    width: 210px;
+}
+
+
+
+/* footer */
+footer {
+    background-color: #325286;
+    padding: 10px;
+    text-align: center;
+    border-radius: 5px;
+    margin-top: 10px;
+    font-size: 30px;
+    color: #ffffff;
+
+}
