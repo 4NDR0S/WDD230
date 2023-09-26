@@ -128,3 +128,8 @@ footer {
     color: #fbff00;
     margin-top: 5px;
 }
+
+#firstParagraph::after {
+    /* content: url(); */
+    content: "🦙";
+}
