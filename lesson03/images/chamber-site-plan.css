@@ -1,0 +1,108 @@
+header {
+    padding: 1em;
+    text-align: center;
+    color: #E4EDF1;
+    background-color: #222B44;
+}
+
+body {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 4em;
+    font-size: 18px;
+    text-align: center;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+p {
+    font-family: Roboto;
+}
+
+
+/* Color table */
+.colors {
+    width: 100%;
+    min-width: 350px;
+    margin: 30px auto;
+    text-align: center;
+}
+
+table {
+    display: table;
+    border-collapse: separate;
+    box-sizing: border-box;
+    text-indent: initial;
+    border-spacing: 2px;
+    border-color: gray;
+}
+
+tbody {
+    display: table-row-group;
+    vertical-align: middle;
+    border-color: inherit;
+}
+
+tr {
+    display: table-row;
+    vertical-align: inherit;
+    border-color: inherit;
+}
+
+table {
+    border-collapse: separate;
+    text-indent: initial;
+    border-spacing: 2px;
+}
+
+.colors td {
+    width: 25%;
+    height: 3em;
+}
+
+td {
+    display: table-cell;
+    vertical-align: inherit;
+}
+
+.colors th {
+    background-color: #e3dfdf;
+}
+
+.color1 {
+    background-color: #222B44;
+    color: #E4EDF1;
+}
+
+.color2 {
+    background-color: #91a1c9;
+}
+
+.color3 {
+    background-color: #E4EDF1;
+}
+
+.color4 {
+    background-color: #BFC892;
+}
+
+/* Color table */
+
+.colored {
+    background-color: #91a1c9;
+    padding: 1rem;
+}
+
+h3,
+h4,
+h2 {
+    display: block;
+    margin-block-start: 1.33em;
+    margin-block-end: 1.33em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+
+img {
+    margin: 20px;
+}
