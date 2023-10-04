@@ -14,7 +14,7 @@ header div {
     /* background-color: rgba(17, 56, 129, 0.727); */
     text-align: center;
     display: grid;
-    grid-template-columns: 2fr 1fr 3fr 2fr;
+    grid-template-columns: 2fr auto auto 2fr;
     align-items: center;
     justify-content: center;
     padding: 10px;
@@ -27,13 +27,13 @@ header img {
     border-radius: 1%;
     padding: 20px;
     text-align: justify;
-    margin-left: 40px;
+    /* margin-left: 40px; */
 }
 
 h1 {
     text-align: left;
     font-size: 50px;
-    padding-left: 30px;
+    /* padding-left: 30px; */
     grid-column: 3/4;
     color: #ffffff;
     margin-top: auto;
