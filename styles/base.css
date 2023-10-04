@@ -24,6 +24,7 @@ header div {
 header img {
     grid-column: 2/3;
     width: 90px;
+    height: 150px;
     border-radius: 1%;
     padding: 20px;
     text-align: justify;
