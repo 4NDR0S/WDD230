@@ -13,10 +13,6 @@ header {
     width: auto;
 }
 
-/* h1 only added for the audit */
-header h1 {
-    color: white;
-}
 
 header img {
     padding-top: 10px;
