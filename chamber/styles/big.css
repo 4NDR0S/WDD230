@@ -1,0 +1,139 @@
+@media screen and (min-width: 1080px) {
+
+    #menu_chamber {
+        display: none;
+        /* hide hamburger button */
+        padding: 10px;
+        text-align: center;
+        margin-top: -20px;
+    }
+
+    .chamber_navigation {
+        flex-direction: row;
+    }
+
+    .chamber_navigation li {
+        display: block;
+        flex: 1 1 100%;
+    }
+
+    /* -----------  HEADER  --------------- */
+
+    :root {
+        --main-color: #222B44;
+        --background-card: #91a1c998;
+        --hr: #BFC892;
+        --second-color: #E4EDF1;
+        --main-font: 'Ubuntu';
+        --text-font: roboto;
+    }
+
+    header {
+        display: grid;
+        grid-template-columns: 2fr 1fr 3fr;
+        background-color: var(--main-color);
+        height: 120px;
+    }
+
+    /* 477 × 151 */
+    header img {
+        grid-column: 1/2;
+        height: 70px;
+        width: 221px;
+        margin-bottom: 0%;
+    }
+
+    header section {
+        grid-column: 2/3;
+    }
+
+    header div {
+        grid-column: 3/4;
+    }
+
+    .chamber_navigation {
+        background-color: var(--main-color);
+        margin-bottom: 0;
+    }
+
+    .chamber_navigation li a:hover {
+        color: var(--hr);
+    }
+
+    /* HERO */
+
+    #Join_btn {
+        position: absolute;
+        top: 20%;
+        left: 20%;
+        transform: translate(-50%, -50%);
+    }
+
+    #Join_btn a {
+        font-size: 60px;
+        padding-left: 15px;
+        padding-right: 18px;
+    }
+
+    /* -----------  MAIN  --------------- */
+    main {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 20px;
+    }
+
+    #events {
+        grid-column: 1/3;
+    }
+
+    #Weather_card {
+        grid-column: 3/4;
+    }
+
+    main h1 {
+        grid-column: 1/4;
+    }
+
+    footer {
+        display: grid;
+        grid-template-columns: 3fr 2fr;
+        grid-template-rows: 2fr 10px 1fr;
+        gap: 20px;
+    }
+
+    #logo_info_f {
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+
+    #more_info {
+        grid-column: 2/3;
+        grid-row: 1/2;
+    }
+
+    footer hr {
+        grid-column: 1/3;
+        grid-row: 2/3;
+    }
+
+    #author_info {
+        grid-row: 3/4;
+        display: block;
+        flex: 1 1 100%;
+    }
+
+    footer section {
+        display: inline-flex;
+        justify-content: center;
+    }
+
+    #author_grid {
+        grid-column: 1/3;
+        display: inline-flex;
+        justify-content: center;
+    }
+
+    #author_grid section p {
+        padding-right: 35px;
+    }
+}
