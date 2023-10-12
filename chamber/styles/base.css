@@ -58,9 +58,9 @@ header img {
     font-weight: 900;
 }
 
-#Join_btn a {
+#Join_btn {
     color: var(--main-color);
-    font-size: 28px;
+    font-size: 58px;
     text-decoration: none;
     font-family: var(--main-font);
     padding-left: 5px;
