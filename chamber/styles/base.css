@@ -17,6 +17,10 @@ header h1 {
     display: none;
 }
 
+h1 {
+    display: none;
+}
+
 header img {
     padding-top: 10px;
     min-height: 60px;
