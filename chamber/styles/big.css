@@ -10,6 +10,7 @@
 
     .chamber_navigation {
         flex-direction: row;
+        margin-right: 50px;
     }
 
     .chamber_navigation li {
@@ -136,5 +137,14 @@
 
     #author_grid section p {
         padding-right: 35px;
+    }
+
+    /* dark/light modes */
+    #mode {
+        position: absolute;
+        top: 1.6rem;
+        right: 1.5rem;
+        font-size: 2rem;
+        cursor: pointer;
     }
 }

@@ -10,12 +10,18 @@ button.addEventListener('click', () => {
     if (input.value != '') {
         input.focus();
         if (listCount < 10) {
+            // agregamos un filter para poder filtrar los espacios y cambiarlos por "+" (Tarren's hyperlink)
+            const filter = input.value.split(" ").join("+");
+
             // entonces crea un elemento li y un boton para eliminar
             const li = document.createElement('li');
             const deleteButton = document.createElement('button');
 
             // valores para li y el boton de eliminar
             li.textContent = input.value;
+
+            // volver el elemento li en a para que se nos genere un link (Tarren's hyperlink)
+            li.innerHTML = `<a href="https://www.churchofjesuschrist.org/search?lang=eng&query=${filter}&page=1&facet=scriptures" target="_blank">${input.value}</a>`
             deleteButton.textContent = '✖️';
 
             // agrega el boton eliminar al elemento li
