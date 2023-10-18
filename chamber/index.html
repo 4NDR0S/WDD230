@@ -27,7 +27,7 @@
 
 <body>
     <header>
-        <img id="logo_header" src="images/Villa_Chamber_logo.png" alt="Villa_Chamber_logo">
+        <img id="logo_header" src="images/Villa_Chamber_logo.webp" alt="Villa_Chamber_logo">
         <!-- h1 only added for the audit -->
         <h1>Villa Chamber of Commerce</h1>
         <div>
@@ -46,7 +46,14 @@
         🌑
     </div>
     <div class="hero">
-        <img src="images/hero_image.png" alt="hero_image">
+        <!-- <img src="images/hero_image.png" alt="hero_image"> -->
+        <!-- only for this week (06) -->
+        <picture>
+            <source media="(max-width: 650px)" srcset="images/wdd230-org-small.webp">
+            <source media="(max-width: 1080px)" srcset="images/wdd230-org-medium.webp">
+            <img src="images/wdd230-org-large.webp" alt="wdd230 org" width="1400" height="700">
+        </picture>
+        <!-- -------- (06) -------- -->
         <button id="Join_btn">Join Now</button>
     </div>
     <main>
@@ -61,8 +68,10 @@
         <section class="card" id="Weather_card">
             <h2>Weather</h2>
             <p>Lima, Peru</p>
-            <p id="weather">🌥️ 67°F - Cloudy</p>
-            <p></p>
+            <p id="weather">🌥️ <span id="temp"></span>°F - Cloudy</p>
+            <p>Humidity: 66%</p>
+            <p>Wind: <span id="windSpeed"></span> mph</p>
+            <p>Windchill: <span id="windchill"></span>°</p>
         </section>
         <h2 id="member_spot">Member Spotlights</h2>
         <section class="spotlights">
@@ -92,7 +101,7 @@
     <footer>
         <section id="logo_info_f">
             <div class="footer_logo_name">
-                <img id="logo_footer" src="images/only_logo.png" alt="Only_logo">
+                <img id="logo_footer" src="images/only_logo.webp" alt="Only_logo">
                 <div>
                     <h3>Villa</h3>
                     <h4>Chamber of Commerce</h4>
@@ -119,6 +128,7 @@
     <script src="scripts/getdates.js"></script>
     <script src="scripts/hamburger.js"></script>
     <script src="scripts/modes.js"></script>
+    <script src="scripts/windchill.js"></script>
 </body>
 
 </html>
