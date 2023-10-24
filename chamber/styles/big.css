@@ -151,4 +151,16 @@
         font-size: 2rem;
         cursor: pointer;
     }
+
+
+    /* DISCOVER PAGE */
+
+
+    .dis-box {
+        grid-column: 1/2;
+    }
+
+    #dis-images img {
+        grid-column: 2/4;
+    }
 }

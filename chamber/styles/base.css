@@ -309,3 +309,62 @@ footer .author_info {
     font-size: 2rem;
     cursor: pointer;
 }
+
+
+
+/* DISCOVER PAGE */
+#discover-grid {
+    font-family: var(--text-font);
+}
+
+.dis-box {
+    border-color: var(--main-color);
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 10px;
+    margin: 0.5rem;
+    padding: 1rem;
+}
+
+/* Calendar */
+#calendar {
+    text-align: center;
+    width: 360px;
+    font-family: var(--text-font);
+}
+
+#calendar ol {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    padding: 0;
+}
+
+#calendar li {
+    text-align: right;
+}
+
+.first-day {
+    grid-column-start: 1;
+}
+
+.day-name {
+    background-color: var(--background-card);
+    font-weight: bold;
+    text-align: center;
+}
+
+#red-day {
+    color: red;
+}
+
+/* Images */
+#dis-images picture {
+    padding-top: 10rem;
+}
+
+#dis-images picture img {
+    width: 100%;
+    height: auto;
+    padding-top: 1rem;
+}
