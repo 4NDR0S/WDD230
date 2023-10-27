@@ -155,12 +155,29 @@
 
     /* DISCOVER PAGE */
 
+    #dis-grid {
+        grid-column: 1/2;
+        padding-top: 1rem;
+    }
 
     .dis-box {
-        grid-column: 1/2;
+        margin-top: 1rem;
     }
 
-    #dis-images img {
+    #dis-images {
         grid-column: 2/4;
+        padding-top: 1rem;
+        padding-right: 4rem;
+        padding-left: 4rem;
     }
+
+    #calendar {
+        width: auto;
+    }
+
+    #dis-images img:hover {
+        box-shadow: 0 0 30px var(--hr);
+        transform: scale(1.04);
+    }
+
 }

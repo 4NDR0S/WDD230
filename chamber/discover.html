@@ -56,6 +56,10 @@
             </div>
             <div id="dis-heading" class="dis-box">
                 <h3>Heading</h3>
+                <picture>
+                    <img src="images/Discover/tourism-logo-tr.webp" id="discover-heading-img" alt="tourism logo"
+                        loading="lazy" width="150" height="200">
+                </picture>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita dolor repudiandae fugiat fuga
                     labore
                     debitis quaerat inventore. Eaque sapiente exercitationem voluptates iste sequi rerum rem
@@ -77,13 +81,12 @@
 
             <div id="dis-events" class="dis-box">
                 <h3>Events</h3>
-                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, cupiditate?</li>
-                <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</li>
-                <li>Lorem ipsum dolor sit.</li>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, cupiditate?</p>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                <p>Lorem ipsum dolor sit.</p>
             </div>
-            <div></div>
             <div id="calendar">
-                <h2>October 2023</h2>
+                <h3>October 2023</h3>
                 <ol>
                     <li class="day-name" id="red-day">Sun</li>
                     <li class="day-name">Mon</li>
@@ -126,22 +129,29 @@
                     <li>31</li>
                 </ol>
             </div>
-            <div id="dis-images">
-                <!-- todas las imagenes son 800 * 500 -->
-                <picture><img src="images/Discover/Plaza-san-martin.webp" alt="San Martin Place" loading="lazy"
-                        width="800" height="500"></picture>
-                <picture><img src="images/Discover/Pucllana-Temple.webp" alt="Pucllana Temple" loading="lazy"
-                        width="800" height="500"></picture>
-                <picture><img src="images/Discover/estadio-nacional.webp" alt="National Stadium Lima" loading="lazy"
-                        width="800" height="500"></picture>
-                <picture><img src="images/Discover/San-Francisco-Monasterio.webp" alt="San Francisco Monastery"
-                        loading="lazy" width="800" height="500"></picture>
-                <picture><img src="images/Discover/pachacamac.webp" alt="Pachacamac Ruins" loading="lazy" width="800"
-                        height="500"></picture>
-                <picture><img src="images/Discover/parapente.webp" alt="Paragliding" loading="lazy" width="800"
-                        height="500"></picture>
+
+            <div id="dis-visits" class="dis-box">
+                <h3>Welcome</h3>
+                <p>Page Visits : <span id="visits"></span></p>
+                <p><span id="mensageVisits"></span></p>
+                <p><span id="pruebita"></span></p>
             </div>
         </section>
+        <div id="dis-images">
+            <!-- todas las imagenes son 800 * 500 -->
+            <picture><img src="images/Discover/Plaza-san-martin.webp" alt="San Martin Place" loading="lazy" width="800"
+                    height="500"></picture>
+            <picture><img src="images/Discover/Pucllana-Temple.webp" alt="Pucllana Temple" loading="lazy" width="800"
+                    height="500"></picture>
+            <picture><img src="images/Discover/estadio-nacional.webp" alt="National Stadium Lima" loading="lazy"
+                    width="800" height="500"></picture>
+            <picture><img src="images/Discover/San-Francisco-Monasterio.webp" alt="San Francisco Monastery"
+                    loading="lazy" width="800" height="500"></picture>
+            <picture><img src="images/Discover/pachacamac.webp" alt="Pachacamac Ruins" loading="lazy" width="800"
+                    height="500"></picture>
+            <picture><img src="images/Discover/parapente.webp" alt="Paragliding" loading="lazy" width="800"
+                    height="500"></picture>
+        </div>
     </main>
     <footer>
         <section id="logo_info_f">
@@ -174,6 +184,7 @@
     <script src="scripts/hamburger.js"></script>
     <script src="scripts/modes.js"></script>
     <script src="scripts/windchill.js"></script>
+    <script src="scripts/discoverVisits.js"></script>
 </body>
 
 </html>

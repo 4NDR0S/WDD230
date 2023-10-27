@@ -308,14 +308,13 @@ footer .author_info {
     right: 8rem;
     font-size: 2rem;
     cursor: pointer;
+    text-shadow: 0 0 8px #f8f9f3;
+    color: white;
 }
 
 
 
 /* DISCOVER PAGE */
-#discover-grid {
-    font-family: var(--text-font);
-}
 
 .dis-box {
     border-color: var(--main-color);
@@ -324,12 +323,29 @@ footer .author_info {
     border-radius: 10px;
     margin: 0.5rem;
     padding: 1rem;
+    margin-bottom: 4rem;
+}
+
+#dis-grid h3 {
+    text-align: center;
+}
+
+#dis-heading picture {
+    display: flex;
+    justify-content: center;
+}
+
+#dis-heading img {
+    width: 150px;
+    height: auto;
+    margin: 0;
 }
 
 /* Calendar */
 #calendar {
+    min-width: 360px;
     text-align: center;
-    width: 360px;
+    width: auto;
     font-family: var(--text-font);
 }
 
@@ -342,6 +358,7 @@ footer .author_info {
 
 #calendar li {
     text-align: right;
+    padding: 0.8rem;
 }
 
 .first-day {
@@ -349,13 +366,14 @@ footer .author_info {
 }
 
 .day-name {
-    background-color: var(--background-card);
+    background-color: #B6CAFC;
     font-weight: bold;
     text-align: center;
+    text-shadow: 0 0 5px rgba(25, 30, 2, 0.635);
 }
 
 #red-day {
-    color: red;
+    color: #701600;
 }
 
 /* Images */
@@ -366,5 +384,10 @@ footer .author_info {
 #dis-images picture img {
     width: 100%;
     height: auto;
-    padding-top: 1rem;
+    margin-top: 1rem;
+    border-radius: 10px;
+    border-width: 2px;
+    border-style: solid;
+    border-color: var(--main-color);
+    margin-bottom: 1.5rem;
 }
