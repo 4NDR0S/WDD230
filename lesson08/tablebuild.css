@@ -1,0 +1,60 @@
+:root {
+    --zebra: rgba(4, 105, 136, 0.285);
+    --border: rgba(37, 58, 4, 0.746);
+}
+
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+table {
+    margin: 20px auto;
+    border: thin solid var(--border);
+
+    border-collapse: collapse;
+    /*para que no hayan espacios entre los recuadros*/
+}
+
+
+/* para hacer el color zebra en el body de la tabla */
+tbody tr:nth-child(odd) {
+    background-color: var(--zebra);
+}
+
+
+caption {
+    padding: 1rem;
+    caption-side: bottom;
+    color: var(--border);
+}
+
+td {
+    padding: 8px 16px;
+    text-align: center;
+    border: solid var(--border);
+    border-width: 1px;
+}
+
+.feature {
+    font-weight: bold;
+}
+
+
+#blackspace {
+    background-color: black;
+}
+
+/* afecta solo al primer hijo de tr (el th con el titulo de la tabla: ACME Wildwest Services) */
+tr:first-child th {
+    background-color: black;
+    color: aliceblue;
+    font-size: larger;
+}
+
+/* afecta a todos los th (se encuentran en el table head) */
+th {
+    background-color: rgba(3, 6, 60, 0.602);
+    color: aliceblue;
+    padding: 1rem;
+    border-width: 0;
+}
