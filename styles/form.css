@@ -51,7 +51,7 @@ form label.top {
 
 
 /* Boton */
-form input.submitBtn {
+.submitBtn {
     border: none;
     background-color: var(--btnbackgroundcolor);
     color: white;
@@ -62,7 +62,7 @@ form input.submitBtn {
     max-width: 20rem;
 }
 
-form input.submitBtn:hover {
+.submitBtn:hover {
     color: var(--btnfontcolor);
 }
 
