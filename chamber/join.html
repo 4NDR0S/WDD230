@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Anthony Vela">
+    <meta name="description" content="WDD 230 - Web Frontend Development | Anthony Vela Paredes | Villa Chamber">
+    <title>Villa Chamber of Commerce | Anthony Vela - WDD 230 | Chamber of Commerce</title>
+    <link rel="icon" href="favicon.chamber.ico">
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Ubuntu:ital@1&display=swap" rel="stylesheet">
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" type="text/css" href="styles/base.css">
+    <link rel="stylesheet" type="text/css" href="styles/medium.css">
+    <link rel="stylesheet" type="text/css" href="styles/big.css">
+
+    <meta property="og:title" content="Villa Chamber of Commerce | Anthony Vela - WDD 230">
+    <meta property="og:type" content="website">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://cdn.getyourguide.com/img/location/54b40793cd6af.jpeg/88.jpg">
+    <meta property="og:url" content="https://4ndr0s.github.io/wdd230/">
+</head>
+
+<body>
+    <header>
+        <img id="logo_header" src="images/Villa_Chamber_logo.webp" alt="Villa_Chamber_logo">
+        <!-- h1 only added for the audit -->
+        <h1>Villa Chamber of Commerce</h1>
+        <div>
+            <nav>
+                <button id="menu_chamber" aria-label="Name"></button>
+                <ul class="chamber_navigation">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="discover.html">Discover</a></li>
+                    <li><a href="#">Directory</a></li>
+                    <li><a href="#">Join</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div id="mode">
+        🌑
+    </div>
+    <main>
+        <form method="get" action="thankyou.html">
+            <fieldset>
+                <legend>Applicant Information</legend>
+                <label class="top" for="fname">First Name: <input type="text" id="fname" name="fname" required></label>
+                <label class="top" for="lname">Last Name: <input type="text" id="lname" name="lname" required></label>
+                <label class="top" for="title">Title|Position: <input type="text" id="title"></label>
+                <label class="top" for="email">Email:
+                    <input type="email" pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$" id="email" name="email"
+                        placeholder="example@gmail.com" title="Please enter a valid email address!" autocomplete="email"
+                        required> </label>
+                <label class="top" for="pnumber">Phone number: <input type="tel" id="pnumber" name="pnumber"
+                        required></label>
+            </fieldset>
+            <fieldset>
+                <legend>Business | Organization</legend>
+                <label class="top" for="bname">Name: <input type="text" id="bname" name="bnames" required></label>
+                <div>Membership Level</div>
+                <label class="sbs"><input type="radio" name="mlevel" value="NP">NP Membership is for non profit
+                    organizations and there is no fee.</label>
+                <label class="sbs"><input type="radio" name="mlevel" value="bronce">Bronze Membership</label>
+                <label class="sbs"><input type="radio" name="mlevel" value="silver">Silver Membership</label>
+                <label class="sbs"><input type="radio" name="mlevel" value="gold">Gold Membership</label>
+                <label class="top" for="bdescription">Description: <input type="text" name="bdescription"
+                        id="bdescription"></label>
+            </fieldset>
+            <label for="btime"><input type="hidden" name="btime" id="btime"></label>
+            <button type="submit">Apply to the chamber!</button>
+        </form>
+        <div id="benefitsBox">
+            <h2>Benefits</h2>
+            <p>These membership levels have increasing costs as well as increased benefits per level. Benefits might
+                include special events, training, advertising (like spotlight positions on the home page), event
+                discounts, etc.</p>
+            <h3>Non Profit Membership</h3>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Natus ea tenetur voluptatum assumenda deserunt
+                odit!</p>
+            <h3>Bronze Membership</h3>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Natus ea tenetur voluptatum assumenda deserunt
+                odit!</p>
+            <h3>Silver Membership</h3>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Natus ea tenetur voluptatum assumenda deserunt
+                odit!</p>
+            <h3>Gold Membership</h3>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Natus ea tenetur voluptatum assumenda deserunt
+                odit!</p>
+        </div>
+    </main>
+    <footer>
+        <section id="logo_info_f">
+            <div class="footer_logo_name">
+                <img id="logo_footer" src="images/only_logo.webp" alt="Only_logo">
+                <div>
+                    <h3>Villa</h3>
+                    <h4>Chamber of Commerce</h4>
+                    <p>Mal. de la Reserva 610</p>
+                    <p>Lima, Miraflores 15074</p>
+                </div>
+            </div>
+        </section>
+        <div id="more_info">
+            <p>info@villa.org</p>
+            <p>+51 01 444-4444</p>
+            <p>🌎 Location Map</p>
+        </div>
+        <hr>
+        <div id="author_grid">
+            <div class="author_info">
+                <p id="firstParagraph">&copy; <span id="year"></span>Villa Chamber</p>
+                <p id="name">Anthony Vela Paredes</p>
+                <p> WDD 230 Project </p>
+                <p id="lastParagraph">Last Modification: <span id="lastModified"></span></p>
+            </div>
+        </div>
+    </footer>
+    <script src="scripts/getdates.js"></script>
+    <script src="scripts/hamburger.js"></script>
+    <script src="scripts/modes.js"></script>
+    <script src="scripts/windchill.js"></script>
+</body>
+
+</html>

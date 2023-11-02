@@ -180,4 +180,14 @@
         transform: scale(1.04);
     }
 
+
+    /* reducir el tamañana el larger view por que usaremos el cursor del monitor en vez del dedo (phone view) */
+    form label.sbs {
+        padding: .4rem 0;
+    }
+
+    #benefitsBox {
+        grid-column: 3/4;
+    }
+
 }
