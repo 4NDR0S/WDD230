@@ -1,6 +1,12 @@
-@media screen and (min-width: 650px) {
+@media screen and (min-width: 600px) {
 
     #calendar {
         width: auto;
+    }
+
+    #Join_btn {
+        position: absolute;
+        font-size: 40px;
+        font-weight: 900;
     }
 }
