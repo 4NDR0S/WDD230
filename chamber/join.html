@@ -51,7 +51,8 @@
                 <legend>Applicant Information</legend>
                 <label class="top" for="fname">First Name: <input type="text" id="fname" name="fname" required></label>
                 <label class="top" for="lname">Last Name: <input type="text" id="lname" name="lname" required></label>
-                <label class="top" for="title">Title|Position: <input type="text" id="title"></label>
+                <label class="top" for="title">Title|Position: <input type="text" id="title" pattern="[a-zA-Z\s-]{7,}"
+                        required></label>
                 <label class="top" for="email">Email:
                     <input type="email" pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$" id="email" name="email"
                         placeholder="example@gmail.com" title="Please enter a valid email address!" autocomplete="email"
@@ -68,29 +69,44 @@
                 <label class="sbs"><input type="radio" name="mlevel" value="bronce">Bronze Membership</label>
                 <label class="sbs"><input type="radio" name="mlevel" value="silver">Silver Membership</label>
                 <label class="sbs"><input type="radio" name="mlevel" value="gold">Gold Membership</label>
-                <label class="top" for="bdescription">Description: <input type="text" name="bdescription"
-                        id="bdescription"></label>
+                <label class="top" for="bdescription">Description: <textarea name="bdescription" id="bdescription"
+                        rows="3"></textarea></label>
             </fieldset>
-            <label for="btime"><input type="hidden" name="btime" id="btime"></label>
+            <!-- timestamp -->
+            <label><input type="hidden" name="timestamp" id="timestamp"></label>
             <button type="submit">Apply to the chamber!</button>
         </form>
+
         <div id="benefitsBox">
             <h2>Benefits</h2>
             <p>These membership levels have increasing costs as well as increased benefits per level. Benefits might
                 include special events, training, advertising (like spotlight positions on the home page), event
                 discounts, etc.</p>
-            <h3>Non Profit Membership</h3>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Natus ea tenetur voluptatum assumenda deserunt
-                odit!</p>
-            <h3>Bronze Membership</h3>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Natus ea tenetur voluptatum assumenda deserunt
-                odit!</p>
-            <h3>Silver Membership</h3>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Natus ea tenetur voluptatum assumenda deserunt
-                odit!</p>
-            <h3>Gold Membership</h3>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Natus ea tenetur voluptatum assumenda deserunt
-                odit!</p>
+            <fieldset class="membershipBox">
+                <h3>Non Profit Membership 🆓</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Natus ea tenetur voluptatum assumenda
+                    deserunt
+                    odit!</p>
+            </fieldset>
+            <fieldset class="membershipBox">
+                <h3>Bronze Membership 🥉</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Natus ea tenetur voluptatum assumenda
+                    deserunt
+                    odit!</p>
+            </fieldset>
+            <fieldset class="membershipBox">
+                <h3>Silver Membership 🥈</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Natus ea tenetur voluptatum assumenda
+                    deserunt
+                    odit!</p>
+            </fieldset>
+
+            <fieldset class="membershipBox">
+                <h3>Gold Membership 🥇</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Natus ea tenetur voluptatum assumenda
+                    deserunt
+                    odit!</p>
+            </fieldset>
         </div>
     </main>
     <footer>
@@ -123,7 +139,8 @@
     <script src="scripts/getdates.js"></script>
     <script src="scripts/hamburger.js"></script>
     <script src="scripts/modes.js"></script>
-    <script src="scripts/windchill.js"></script>
+    <!-- <script src="scripts/windchill.js"></script> -->
+    <script src="scripts/form.js"></script>
 </body>
 
 </html>

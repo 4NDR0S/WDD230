@@ -189,7 +189,19 @@
     }
 
     #benefitsBox {
-        grid-column: 3/4;
+        grid-column: 2/4;
+        padding-top: 1rem;
+        padding-left: 5rem;
+        padding-right: 2rem;
+        max-width: 80rem;
     }
 
+
+    .membershipBox {
+        margin: 3rem 4rem;
+    }
+
+    #thankyouM {
+        grid-column: 1/4;
+    }
 }
