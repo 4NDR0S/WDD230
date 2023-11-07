@@ -24,7 +24,7 @@ const displayProphets = (prophets) => {
         let portrait = document.createElement('img');
 
         // darle valos al nombre completo de los h2
-        fullName.textContent = `${prophet.name} ${prophet.lastname}`;
+        fullName.textContent = `${prophet.name} ${prophet.lastname}`;  // ` = Alt+96  (para hacer la tilde invertida "`")
 
         //contruir la imagen 
         portrait.setAttribute('src', prophet.imageurl);
