@@ -15,34 +15,39 @@ const activities = document.querySelector('#listActivities');
 const displayLinks = (lessons) => {
     lessons.forEach(lesson => {
 
-        let list = document.createElement('li')
+        let list = document.createElement('li');
         // let a = document.createElement('a')
 
         list.textContent = `${lesson.lesson}: `;
 
+
         // const linkss = lesson.links
-        (lesson.links).forEach(link => {
-
-            let a = document.createElement('a')
-
-            a.setAttribute('src', link.url);
-            a.setAttribute('target', '_blank');
-
-            a.textContent = ` ${link.title} |`;
-
-            list.appendChild(a);
-
-        })
-
         // a.setAttribute('src', lesson.links.url);
         // a.setAttribute('target', '_blank');
-
         // a.textContent = `${lesson.links.title}`;
-
         // list.appendChild(a);
+
+
+        displayA(lesson.links, list);
 
         activities.appendChild(list);
     });
+}
+
+//cree esta funcion para poder usar el forEach en cada elemento del array "links"[]
+const displayA = (lesson_links, list) => {
+    lesson_links.forEach(link => {
+
+        let a = document.createElement('a');
+
+        a.setAttribute('href', link.url);
+        a.setAttribute('target', '_blank');
+
+        a.textContent = ` ${link.title}  |`;
+
+        list.appendChild(a);
+
+    })
 }
 
 getLinks();
