@@ -46,7 +46,7 @@
             ]
         },
         {
-            "name": "Ramos",
+            "Fname": "Ramos",
             "date": "20/02/2012",
             "numberOfPeople": 4,
             "visited": false,

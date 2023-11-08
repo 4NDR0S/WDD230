@@ -1,0 +1,125 @@
+{
+    "lessons": [
+        {
+            "lesson": "01",
+            "links": [
+                {
+                    "url": "week01/holygrail.html",
+                    "title": "Holy Layout"
+                },
+                {
+                    "url": "https://codepen.io/blazzard-jason/pen/WNyPpXJ",
+                    "title": "JS Pen"
+                }
+            ]
+        },
+        {
+            "lesson": "02",
+            "links": [
+                {
+                    "url": "lesson02/design.html",
+                    "title": "Design"
+                },
+                {
+                    "url": "week01/media-query.html",
+                    "title": "Media Query Example"
+                },
+                {
+                    "url": "lesson02/design-principles.html",
+                    "title": "Design Principles"
+                }
+            ]
+        },
+        {
+            "lesson": "03",
+            "links": [
+                {
+                    "url": "lesson03/images/CSS_Combinators_ss.png",
+                    "title": "CSS Combinators"
+                },
+                {
+                    "url": "https://codepen.io/Anthony-Vela/pen/eYbMPdb",
+                    "title": "CSS Pseudo-Elements"
+                },
+                {
+                    "url": "https://codepen.io/Anthony-Vela/pen/BavrGGg",
+                    "title": "Responsive Menu"
+                },
+                {
+                    "url": "lesson03/chamber-site-plan.html",
+                    "title": "Chamber Site Plan"
+                }
+            ]
+        },
+        {
+            "lesson": "04",
+            "links": [
+                {
+                    "url": "https://codepen.io/Anthony-Vela/pen/OJrBJQm",
+                    "title": "CSS Pseudo-Classes"
+                }
+            ]
+        },
+        {
+            "lesson": "05",
+            "links": [
+                {
+                    "url": "lesson05/bom.html",
+                    "title": "Book of Mormon Favorite Chapters Application"
+                }
+            ]
+        },
+        {
+            "lesson": "06",
+            "links": [
+                {
+                    "url": "lesson03/images/scape.webp",
+                    "title": "WebP"
+                },
+                {
+                    "url": "lesson06/responsive-images.html",
+                    "title": "Responsive Images"
+                }
+            ]
+        },
+        {
+            "lesson": "07",
+            "links": [
+                {
+                    "url": "lesson03/lazyload.html",
+                    "title": "Lazy Loading"
+                },
+                {
+                    "url": "lesson07/bom.html",
+                    "title": "New BOM Application"
+                }
+            ]
+        },
+        {
+            "lesson": "08",
+            "link": [
+                {
+                    "url": "lesson08/tablebuild.html",
+                    "title": "HTML Tables"
+                },
+                {
+                    "url": "form.html",
+                    "title": "Form Building Activitie"
+                }
+            ]
+        },
+        {
+            "lesson": "09",
+            "link": [
+                {
+                    "url": "lesson09/new-ward-members.json",
+                    "title": "New Ward Members(json)"
+                },
+                {
+                    "url": "lesson09/prophets.html",
+                    "title": "Latter-day Prophets"
+                }
+            ]
+        }
+    ]
+}
