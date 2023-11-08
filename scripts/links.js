@@ -16,16 +16,32 @@ const displayLinks = (lessons) => {
     lessons.forEach(lesson => {
 
         let list = document.createElement('li')
-        let a = document.createElement('a')
+        // let a = document.createElement('a')
 
-        list.textContent = `${lesson.lesson}`;
+        list.textContent = `${lesson.lesson}: `;
 
-        a.setAttribute('src', lesson.link.url);
-        a.setAttribute('target', '_blank');
+        // const linkss = lesson.links
+        (lesson.links).forEach(link => {
 
-        a.textContent = `${lesson.link.title}`;
+            let a = document.createElement('a')
 
-        list.appendChild(a);
+            a.setAttribute('src', link.url);
+            a.setAttribute('target', '_blank');
+
+            a.textContent = ` ${link.title} |`;
+
+            list.appendChild(a);
+
+        })
+
+        // a.setAttribute('src', lesson.links.url);
+        // a.setAttribute('target', '_blank');
+
+        // a.textContent = `${lesson.links.title}`;
+
+        // list.appendChild(a);
+
+        activities.appendChild(list);
     });
 }
 

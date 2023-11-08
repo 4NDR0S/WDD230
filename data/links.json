@@ -97,7 +97,7 @@
         },
         {
             "lesson": "08",
-            "link": [
+            "links": [
                 {
                     "url": "lesson08/tablebuild.html",
                     "title": "HTML Tables"
@@ -110,7 +110,7 @@
         },
         {
             "lesson": "09",
-            "link": [
+            "links": [
                 {
                     "url": "lesson09/new-ward-members.json",
                     "title": "New Ward Members(json)"
