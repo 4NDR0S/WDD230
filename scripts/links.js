@@ -20,14 +20,6 @@ const displayLinks = (lessons) => {
 
         list.textContent = `${lesson.lesson}: `;
 
-
-        // const linkss = lesson.links
-        // a.setAttribute('src', lesson.links.url);
-        // a.setAttribute('target', '_blank');
-        // a.textContent = `${lesson.links.title}`;
-        // list.appendChild(a);
-
-
         displayA(lesson.links, list);
 
         activities.appendChild(list);
@@ -43,9 +35,10 @@ const displayA = (lesson_links, list) => {
         a.setAttribute('href', link.url);
         a.setAttribute('target', '_blank');
 
-        a.textContent = ` ${link.title}  |`;
+        a.textContent = ` ${link.title}`;
 
         list.appendChild(a);
+        list.append(" | ");
 
     })
 }
