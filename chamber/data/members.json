@@ -1,67 +1,76 @@
 {
     "members": [
         {
-            "name": "",
-            "address": "",
-            "phone": "",
-            "url": "",
-            "image": "",
-            "level": "",
-            "other": ""
+            "name": "Tomy's Barber Shop",
+            "address": "Av. Arequipa 456",
+            "phone": "+51 998845872",
+            "url": "tomysbarber.com",
+            "imgurl": "images/cards_logos/barber.logo.webp",
+            "level": "gold",
+            "other": "[Extra info]"
         },
         {
-            "name": "",
-            "address": "",
-            "phone": "",
-            "url": "",
-            "image": "",
-            "level": "",
-            "other": ""
+            "name": "Mary's Coffee",
+            "address": "Av. Cusco 894",
+            "phone": "+51 98884562",
+            "url": "maryscoffee.com",
+            "imgurl": "images/cards_logos/coffee-_logo.webp",
+            "level": "gold",
+            "other": "[Extra info]"
         },
         {
-            "name": "",
-            "address": "",
-            "phone": "",
-            "url": "",
-            "image": "",
-            "level": "",
-            "other": ""
+            "name": "Menu Criollo",
+            "address": "Jr. Paruro 621",
+            "phone": "+51 99595995",
+            "url": "menucriollo.com",
+            "imgurl": "images/cards_logos/menu_logo.webp",
+            "level": "gold",
+            "other": "[Extra info]"
         },
         {
-            "name": "",
-            "address": "",
-            "phone": "",
-            "url": "",
-            "image": "",
-            "level": "",
-            "other": ""
+            "name": "Diaz Builders & Co.",
+            "address": "28 de Julio 423",
+            "phone": "+51 97978523",
+            "url": "diazbuilders.com",
+            "imgurl": "images/cards_logos/house_logo.webp",
+            "level": "silver",
+            "other": "[Extra info]"
         },
         {
-            "name": "",
-            "address": "",
-            "phone": "",
-            "url": "",
-            "image": "",
-            "level": "",
-            "other": ""
+            "name": "Perez Farm",
+            "address": "Sur, Lima 15823",
+            "phone": "+51 96653982",
+            "url": "perezfarm.com",
+            "imgurl": "images/cards_logos/farm_logo.webp",
+            "level": "silver",
+            "other": "[Extra info]"
         },
         {
-            "name": "",
-            "address": "",
-            "phone": "",
-            "url": "",
-            "image": "",
-            "level": "",
-            "other": ""
+            "name": "Pet Shop",
+            "address": "San Roque 1508",
+            "phone": "+51 94512981",
+            "url": "petshop.com",
+            "imgurl": "images/cards_logos/petshop_logo.webp",
+            "level": "bronce",
+            "other": "[Extra info]"
         },
         {
-            "name": "",
-            "address": "",
-            "phone": "",
-            "url": "",
-            "image": "",
-            "level": "",
-            "other": ""
+            "name": "Globe Lan Center",
+            "address": "Av. Gral. Antonio Alvarez de Arenales 1743",
+            "phone": "+51 975641230",
+            "url": "globenet.com",
+            "imgurl": "images/cards_logos/globe_internet_logo.webp",
+            "level": "non profit",
+            "other": "[Extra info]"
+        },
+        {
+            "name": "Phantom Lan Center",
+            "address": "Av. Gral. Antonio Alvarez de Arenales 1737",
+            "phone": "+51 912345678",
+            "url": "panthomnet.com",
+            "imgurl": "images/cards_logos/pantera_logo.webp",
+            "level": "non profit",
+            "other": "[Extra info]"
         }
     ]
 }
