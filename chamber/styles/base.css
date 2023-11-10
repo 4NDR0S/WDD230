@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Ubuntu:ital@1&display=swap');
+
 :root {
     --main-color: #222B44;
     --background-card: #91a1c998;
@@ -592,4 +595,17 @@ form label.top input:required:valid {
 
 .list section:nth-child(even) {
     background-color: var(--background-card);
+}
+
+.list section h3 {
+    font-family: var(--main-font);
+}
+
+.list section p {
+    font-family: var(--text-font);
+}
+
+.list section a {
+    font-family: var(--text-font);
+    text-decoration: none;
 }
