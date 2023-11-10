@@ -9,4 +9,28 @@
         font-size: 40px;
         font-weight: 900;
     }
+
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(390px, 1fr));
+    }
+
+    .grid {
+        padding-right: 1rem;
+        padding-left: 1rem;
+        margin-left: -5%;
+        margin-right: -5%;
+    }
+
+    .list section {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1.3fr;
+        text-align: left;
+        width: 100%;
+    }
+
+    .Directory_menu {
+        grid-column: 1/4;
+        text-align: right;
+    }
 }

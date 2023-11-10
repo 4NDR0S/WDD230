@@ -204,4 +204,36 @@
     #thankyouM {
         grid-column: 1/4;
     }
+
+    /* directory */
+
+    #Directory_cards {
+        grid-column: 1/4;
+    }
+
+    .grid {
+        /* grid-column: 1/4; */
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(390px, 1fr));
+        margin-left: -4%;
+    }
+
+
+    /* list */
+
+    .Directory_menu {
+        grid-column: 1/4;
+        text-align: right;
+    }
+
+    .list section {
+        grid-column: 1/4;
+        margin-left: 2rem;
+    }
+
+    .list section {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1.3fr;
+        text-align: left;
+    }
 }

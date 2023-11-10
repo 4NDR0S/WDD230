@@ -2,7 +2,7 @@
     "members": [
         {
             "name": "Tomy's Barber Shop",
-            "address": "Av. Arequipa 456",
+            "address": "C. Las Begonias 730",
             "phone": "+51 998845872",
             "url": "tomysbarber.com",
             "imgurl": "images/cards_logos/barber.logo.webp",
@@ -11,7 +11,7 @@
         },
         {
             "name": "Mary's Coffee",
-            "address": "Av. Cusco 894",
+            "address": "Av Javier Prado Oeste 1650",
             "phone": "+51 98884562",
             "url": "maryscoffee.com",
             "imgurl": "images/cards_logos/coffee-_logo.webp",
@@ -20,7 +20,7 @@
         },
         {
             "name": "Menu Criollo",
-            "address": "Jr. Paruro 621",
+            "address": "Av. Los Ruiseñores 1125",
             "phone": "+51 99595995",
             "url": "menucriollo.com",
             "imgurl": "images/cards_logos/menu_logo.webp",
@@ -29,7 +29,7 @@
         },
         {
             "name": "Diaz Builders & Co.",
-            "address": "28 de Julio 423",
+            "address": "Antunez de Mayolo 2050",
             "phone": "+51 97978523",
             "url": "diazbuilders.com",
             "imgurl": "images/cards_logos/house_logo.webp",
@@ -38,7 +38,7 @@
         },
         {
             "name": "Perez Farm",
-            "address": "Sur, Lima 15823",
+            "address": "Panamericana Sur, Lima 15823",
             "phone": "+51 96653982",
             "url": "perezfarm.com",
             "imgurl": "images/cards_logos/farm_logo.webp",
@@ -47,7 +47,7 @@
         },
         {
             "name": "Pet Shop",
-            "address": "San Roque 1508",
+            "address": "Jirón de la Unión 986",
             "phone": "+51 94512981",
             "url": "petshop.com",
             "imgurl": "images/cards_logos/petshop_logo.webp",

@@ -34,9 +34,9 @@
             <nav>
                 <button id="menu_chamber" aria-label="Name"></button>
                 <ul class="chamber_navigation">
-                    <li><a href="#">Home</a></li>
+                    <li><a href="index.html">Home</a></li>
                     <li><a href="discover.html">Discover</a></li>
-                    <li><a href="#">Directory</a></li>
+                    <li><a href="directory.html">Directory</a></li>
                     <li><a href="join.html">Join</a></li>
                 </ul>
             </nav>
@@ -46,16 +46,13 @@
         🌑
     </div>
     <main>
-        <img src="images/cards_logos/barber.logo.webp">
-        <img src="images/cards_logos/coffee-_logo.webp">
-        <img src="images/cards_logos/menu_logo.webp">
-        <img src="images/cards_logos/house_logo.webp">
-        <img src="images/cards_logos/farm_logo.webp">
-        <img src="images/cards_logos/petshop_logo.webp">
-        <img src="images/cards_logos/globe_internet_logo.webp">
-        <img src="images/cards_logos/pantera_logo.webp">
-
-
+        <div class="Directory_menu">
+            <button id="grid">▦</button>
+            <button id="list">▤</button>
+        </div>
+        <!-- <article id="Directory_article" class="grid"> -->
+        <div id="Directory_cards" class="grid"></div>
+        <!-- </article> -->
     </main>
     <footer>
         <section id="logo_info_f">
@@ -87,7 +84,9 @@
     <script src="scripts/getdates.js"></script>
     <script src="scripts/hamburger.js"></script>
     <script src="scripts/modes.js"></script>
-    <script src="scripts/windchill.js"></script>
+    <!-- <script src="scripts/windchill.js"></script> -->
+    <script src="scripts/members.js"></script>
+    <script src="scripts/directoryList.js"></script>
 </body>
 
 </html>
