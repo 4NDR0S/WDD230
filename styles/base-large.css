@@ -83,4 +83,13 @@
     form {
         grid-column: 1/3;
     }
+
+    /* weather */
+    #block1 {
+        padding-top: 1rem;
+    }
+
+    #block2 {
+        padding-top: 1rem;
+    }
 }

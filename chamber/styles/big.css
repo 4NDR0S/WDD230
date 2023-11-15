@@ -22,7 +22,7 @@
 
     :root {
         --main-color: #222B44;
-        --background-card: #91a1c998;
+        --background-card: rgba(199, 225, 255, 0.631);
         --hr: #BFC892;
         --second-color: #E4EDF1;
         --main-font: 'Ubuntu';

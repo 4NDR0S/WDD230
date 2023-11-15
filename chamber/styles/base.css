@@ -3,7 +3,7 @@
 
 :root {
     --main-color: #222B44;
-    --background-card: #91a1c998;
+    --background-card: rgba(199, 225, 255, 0.631);
     --hr: #BFC892;
     --second-color: #E4EDF1;
     --main-font: 'Ubuntu';
@@ -206,23 +206,40 @@ footer .author_info {
 .card {
     box-shadow: 4px 4px 10px #0a1e3f94;
     border-radius: 10px;
-    background-color: var(--background-card);
-    padding-top: 2.5px;
     padding-bottom: 2.5px;
     margin-top: 20px;
-    padding-right: 20px;
-    padding-left: 20px;
+    border: solid 2.5px var(--main-color);
+    background-color: var(--background-card);
+}
+
+.card h2 {
+    background-color: var(--hr);
+    color: #010101;
+    text-align: center;
+    font-size: 18px;
+    margin-top: -1px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    margin-left: 0;
 }
 
 .card h3 {
     font-size: 18px;
     font-family: var(--text-font);
     text-decoration: none;
+    padding-left: 2rem;
+}
+
+.card h4 {
+    padding-left: 2rem;
 }
 
 .card p {
     font-family: var(--text-font);
     text-decoration: none;
+    padding-left: 2rem;
 }
 
 #information {
@@ -234,6 +251,8 @@ footer .author_info {
     box-shadow: 4px 4px 10px #325286;
     border-radius: 10px;
     background-color: var(--background-card);
+    border: solid 1.5px var(--main-color);
+    margin-top: 1rem;
 }
 
 .spotlights a {
