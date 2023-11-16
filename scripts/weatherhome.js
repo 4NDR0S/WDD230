@@ -33,7 +33,15 @@ function displayResults(data) {
     const iconsrc = `https://openweathermap.org/img/w/03n.png`;
 
     let desc = data.weather[0].description;
-    weatherIcon.setAttribute('src', iconsrc);
+
+    // para que no presente como error en el html creamos el elemento img desde el JS
+    let icon = document.createElement('img');
+    icon.setAttribute('src', iconsrc);
+    icon.setAttribute('alt', `${desc}`);
+    weatherIcon.appendChild(icon);
+    // ----- crear img elemento desde JS --------------------
+
+    // weatherIcon.setAttribute('src', iconsrc);  //este seria el codigo inicial
     captionDesc.textContent = `${CapitalizeFistLetter(desc)} `;
 }
 
