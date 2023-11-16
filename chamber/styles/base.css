@@ -242,6 +242,7 @@ footer .author_info {
     padding-left: 2rem;
 }
 
+
 #information {
     text-align: center;
 }
@@ -627,4 +628,36 @@ form label.top input:required:valid {
 .list section a {
     font-family: var(--text-font);
     text-decoration: none;
+}
+
+/* weather */
+#weather_box {
+    display: grid;
+    grid-column: 1fr 1fr;
+    column-gap: 1rem;
+    justify-content: center;
+}
+
+#weatherCol1 {
+    grid-column: 1/2;
+}
+
+#weatherCol1 p {
+    padding-left: 0;
+}
+
+#wIcon {
+    display: inline-flex;
+}
+
+#wIcon p {
+    padding-left: 0;
+}
+
+#capDesc {
+    margin-top: -0.2rem;
+}
+
+#weatherCol2 {
+    grid-column: 2/3;
 }

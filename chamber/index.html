@@ -67,11 +67,28 @@
 
         <section class="card" id="Weather_card">
             <h2>Weather</h2>
-            <p>Lima, Peru</p>
+            <!-- <p>Lima, Peru</p>
             <p id="weather">🌥️ <span id="temp"></span>°F - Cloudy</p>
             <p>Humidity: 66%</p>
             <p>Wind: <span id="windSpeed"></span> mph</p>
-            <p>Windchill: <span id="windchill"></span>°</p>
+            <p>Windchill: <span id="windchill"></span>°</p> -->
+            <div id="weather_box">
+                <div id="weatherCol1">
+                    <div id="wIcon">
+                        <img id="weather-icon" src="" alt="">
+                        <p><span id="current-temp"></span></p>
+                    </div>
+                    <p id="capDesc"><span id="captionDesc"></span></p>
+                    <p>Feels like : <span id="Flike"></span></p>
+                </div>
+                <div id="weatherCol2">
+                    <p>Lima, Peru 🦙</p>
+                    <p>Humidity : <span id="humidity"></span></p>
+                    <p>Windchill: <span id="windchill"></span>°</p>
+                    <p>Wind: <span id="windSpeed"></span> mph</p>
+                </div>
+            </div>
+
         </section>
         <h2 id="member_spot">Member Spotlights</h2>
         <section class="spotlights">
@@ -129,6 +146,7 @@
     <script src="scripts/hamburger.js"></script>
     <script src="scripts/modes.js"></script>
     <script src="scripts/windchill.js"></script>
+    <script src="scripts/weatherChamber.js"></script>
 </body>
 
 </html>
