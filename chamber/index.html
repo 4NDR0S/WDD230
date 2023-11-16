@@ -59,19 +59,25 @@
     <main>
         <section class="card" id="events">
             <h2>Events</h2>
-            <h3>Day of the Creole song - Fair F🥘🥘d</h3>
-            <h4>Join us for the most delicious, fun and family-friendly food fair of the month, Tuesday at 12:00 p.m.
-            </h4>
-            <p><a>more info...</a></p>
+            <div class="event_l">
+                <h3>Day of the Creole song - Fair F🥘🥘d</h3>
+                <h4>Join us for the most delicious, fun and family-friendly food fair of the month, Tuesday at 12:00
+                    p.m.
+                </h4>
+                <p><a>more info...</a></p>
+            </div>
+            <div class="event_l">
+                <h3>Event #2</h3>
+                <h4>[Join us for the most delicious, fun and family-friendly food fair of the month, Tuesday at 12:00
+                    p.m.]
+                </h4>
+                <p><a>more info...</a></p>
+            </div>
         </section>
 
         <section class="card" id="Weather_card">
             <h2>Weather</h2>
-            <!-- <p>Lima, Peru</p>
-            <p id="weather">🌥️ <span id="temp"></span>°F - Cloudy</p>
-            <p>Humidity: 66%</p>
-            <p>Wind: <span id="windSpeed"></span> mph</p>
-            <p>Windchill: <span id="windchill"></span>°</p> -->
+            <h4>Lima, Peru (today: <span id="today"></span>)</h4>
             <div id="weather_box">
                 <div id="weatherCol1">
                     <div id="wIcon">
@@ -82,10 +88,40 @@
                     <p>Feels like : <span id="Flike"></span></p>
                 </div>
                 <div id="weatherCol2">
-                    <p>Lima, Peru 🦙</p>
                     <p>Humidity : <span id="humidity"></span></p>
                     <p>Windchill: <span id="windchill"></span>°</p>
                     <p>Wind: <span id="windSpeed"></span> mph</p>
+                </div>
+            </div>
+
+            <div id="forecast_box">
+                <div>
+                    <p class="forecast_days"><span id="day1"></span></p>
+                    <div class="fore_icon">
+                        <img id="day1-icon" src="" alt="">
+                    </div>
+                    <p><span id="day1-temp"></span></p>
+                </div>
+                <div>
+                    <p class="forecast_days"><span id="day2"></span></p>
+                    <div class="fore_icon">
+                        <img id="day2-icon" src="" alt="">
+                    </div>
+                    <p><span id="day2-temp"></span></p>
+                </div>
+                <div>
+                    <p class="forecast_days"><span id="day3"></span></p>
+                    <div class="fore_icon">
+                        <img id="day3-icon" src="" alt="">
+                    </div>
+                    <p><span id="day3-temp"></span></p>
+                </div>
+                <div>
+                    <p class="forecast_days"><span id="day4"></span></p>
+                    <div class="fore_icon">
+                        <img id="day4-icon" src="" alt="">
+                    </div>
+                    <p><span id="day4-temp"></span></p>
                 </div>
             </div>
 
@@ -145,8 +181,9 @@
     <script src="scripts/getdates.js"></script>
     <script src="scripts/hamburger.js"></script>
     <script src="scripts/modes.js"></script>
-    <script src="scripts/windchill.js"></script>
+    <!-- <script src="scripts/windchill.js"></script> -->
     <script src="scripts/weatherChamber.js"></script>
+    <script src="scripts/forecast.js"></script>
 </body>
 
 </html>
