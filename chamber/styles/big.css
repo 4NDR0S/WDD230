@@ -46,7 +46,7 @@
         grid-column: 1/2;
         height: 70px;
         width: 221px;
-        margin-bottom: 0%;
+        margin-bottom: 0;
     }
 
     header section {
@@ -68,10 +68,15 @@
 
     /* HERO */
 
+    .hero picture img {
+        max-width: 1450px;
+        margin-top: 0;
+    }
+
     #Join_btn {
         position: absolute;
-        top: 70%;
-        left: 20%;
+        top: 50%;
+        left: 30%;
         transform: translate(-50%, -50%);
         font-size: 60px;
         font-weight: 900;
@@ -235,5 +240,12 @@
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1.3fr;
         text-align: left;
+    }
+
+    .banner {
+        grid-column: 1/4;
+        margin-left: 2%;
+        margin-right: 2%;
+        font-size: larger;
     }
 }

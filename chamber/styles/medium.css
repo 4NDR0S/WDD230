@@ -1,5 +1,9 @@
 @media screen and (min-width: 600px) {
 
+    header img {
+        margin-top: 0;
+    }
+
     #calendar {
         width: auto;
     }

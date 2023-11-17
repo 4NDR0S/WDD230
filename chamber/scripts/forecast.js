@@ -47,10 +47,33 @@ function displayForecast(data) {
     var iconCode4 = data.list[4].weather[0].icon;
     const iconsrc4 = `https://openweathermap.org/img/w/${iconCode4}.png`;
 
-    iconD1.setAttribute('src', iconsrc);
-    iconD2.setAttribute('src', iconsrc2);
-    iconD3.setAttribute('src', iconsrc3);
-    iconD4.setAttribute('src', iconsrc4);
+    //codigo inicial:
+    // iconD1.setAttribute('src', iconsrc);
+    // iconD2.setAttribute('src', iconsrc2);
+    // iconD3.setAttribute('src', iconsrc3);
+    // iconD4.setAttribute('src', iconsrc4);
+    //codigo inicial _
+
+    //creacion de elementos para que no se considere como error en el html
+    //icon 1
+    let icon1 = document.createElement('img');
+    icon1.setAttribute('src', iconsrc);
+    iconD1.appendChild(icon1);
+
+    //icon 2
+    let icon2 = document.createElement('img');
+    icon2.setAttribute('src', iconsrc2);
+    iconD2.appendChild(icon2);
+
+    //icon 3
+    let icon3 = document.createElement('img');
+    icon3.setAttribute('src', iconsrc3);
+    iconD3.appendChild(icon3);
+
+    //icon 4
+    let icon4 = document.createElement('img');
+    icon4.setAttribute('src', iconsrc4);
+    iconD4.appendChild(icon4);
 
     // para la temperatura
     temp1.innerHTML = `${Math.trunc(data.list[1].main.temp)}&deg;F`;

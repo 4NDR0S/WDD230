@@ -36,7 +36,12 @@ function displayResults(data) {
     const iconsrc = `https://openweathermap.org/img/w/03n.png`;
 
     let desc = data.weather[0].description;
-    weatherIcon.setAttribute('src', iconsrc);
+    // weatherIcon.setAttribute('src', iconsrc);
+
+    let icon = document.createElement('img');
+    icon.setAttribute('src', iconsrc);
+    weatherIcon.appendChild(icon);
+
     captionDesc.textContent = `${CapitalizeFistLetter(desc)} `;
 }
 

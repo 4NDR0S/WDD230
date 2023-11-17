@@ -49,14 +49,19 @@
         <!-- <img src="images/hero_image.png" alt="hero_image"> -->
         <!-- only for this week (06) -->
         <picture>
-            <source media="(max-width: 600px)" srcset="images/wdd230-org-small.webp">
-            <source media="(max-width: 1000px)" srcset="images/wdd230-org-medium.webp">
-            <img src="images/wdd230-org-large.webp" alt="wdd230 org" width="2000" height="1000">
+            <source media="(max-width: 600px)" srcset="images/hero_image_small.webp">
+            <source media="(max-width: 1000px)" srcset="images/hero_image_medium.webp">
+            <img src="images/hero_image_larger.webp" alt="wdd230 org" width="1300" height="600">
         </picture>
         <!-- (06) -->
         <a id="Join_btn" href="join.html">Join Now</a>
     </div>
     <main>
+        <div class="banner">
+            <span class="close-banner">✖️</span>
+            <h3>Meet and greet! 🏦</h3>
+            <p>You are invited to attend the chamber of commerce meet and greet on Wednesday at 7:00 p.m.</p>
+        </div>
         <section class="card" id="events">
             <h2>Events</h2>
             <div class="event_l">
@@ -81,7 +86,7 @@
             <div id="weather_box">
                 <div id="weatherCol1">
                     <div id="wIcon">
-                        <img id="weather-icon" src="" alt="">
+                        <div id="weather-icon"></div>
                         <p><span id="current-temp"></span></p>
                     </div>
                     <p id="capDesc"><span id="captionDesc"></span></p>
@@ -97,30 +102,22 @@
             <div id="forecast_box">
                 <div>
                     <p class="forecast_days"><span id="day1"></span></p>
-                    <div class="fore_icon">
-                        <img id="day1-icon" src="" alt="">
-                    </div>
+                    <div class="fore_icon" id="day1-icon"></div>
                     <p><span id="day1-temp"></span></p>
                 </div>
                 <div>
                     <p class="forecast_days"><span id="day2"></span></p>
-                    <div class="fore_icon">
-                        <img id="day2-icon" src="" alt="">
-                    </div>
+                    <div class="fore_icon" id="day2-icon"></div>
                     <p><span id="day2-temp"></span></p>
                 </div>
                 <div>
                     <p class="forecast_days"><span id="day3"></span></p>
-                    <div class="fore_icon">
-                        <img id="day3-icon" src="" alt="">
-                    </div>
+                    <div class="fore_icon" id="day3-icon"></div>
                     <p><span id="day3-temp"></span></p>
                 </div>
                 <div>
                     <p class="forecast_days"><span id="day4"></span></p>
-                    <div class="fore_icon">
-                        <img id="day4-icon" src="" alt="">
-                    </div>
+                    <div class="fore_icon" id="day4-icon"></div>
                     <p><span id="day4-temp"></span></p>
                 </div>
             </div>
@@ -184,6 +181,7 @@
     <!-- <script src="scripts/windchill.js"></script> -->
     <script src="scripts/weatherChamber.js"></script>
     <script src="scripts/forecast.js"></script>
+    <script src="scripts/banner.js"></script>
 </body>
 
 </html>
