@@ -221,7 +221,7 @@ footer .author_info {
     color: #010101;
     text-align: center;
     font-size: 18px;
-    margin-top: -1px;
+    margin-top: 0;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
     padding-top: 15px;
@@ -530,10 +530,17 @@ form label.top input:required:valid {
 }
 
 /*----------- HTML DIRECTORY --------------*/
+#directory_body {
+    margin: 0;
+}
+
+.directory_main {
+    padding: 1rem;
+}
+
 .Directory_menu {
     text-align: right;
     padding: 2rem;
-    margin-right: 5%;
     margin-bottom: 0;
 }
 
@@ -550,8 +557,8 @@ form label.top input:required:valid {
     margin-top: 1rem;
     box-shadow: 0 0 60px #777;
     padding: 0.5rem;
-    margin-left: -5%;
-    margin-right: -5%;
+    /* margin-left: -5%;
+    margin-right: -5%; */
 }
 
 /* .grid #Directory_cards section { */
