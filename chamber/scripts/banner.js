@@ -6,10 +6,12 @@ closeBanner.addEventListener("click", () => {
 });
 
 var currentDate = new Date();
-var currentDay = currentDate.getDate();
+var currentDay = currentDate.getDay();
 
 if (currentDay >= 1 && currentDay <= 3) {
     banner.style.display = 'block';  //aca va block (cambiar los valores para hacer visual el banner)
 } else {
     banner.style.display = 'none';  //aca va none
 }
+
+console.log(currentDay);
