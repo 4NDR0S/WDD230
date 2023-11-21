@@ -780,7 +780,7 @@ form label.top input:required:valid {
 }
 
 .banner {
-    background: linear-gradient(var(--banner), var(--banner)), url(chamber/images/banner.webp) no-repeat center center;
+    background: linear-gradient(var(--banner), var(--banner)), url(https://raw.githubusercontent.com/4NDR0S/wdd230/main/chamber/images/banner.webp) no-repeat center center;
     background-size: cover;
 }
 
