@@ -303,7 +303,7 @@ footer .author_info {
     box-shadow: 4px 4px 10px #325286;
     border-radius: 10px;
     background-color: var(--background-card);
-    border: solid 1.5px var(--main-color);
+    border: solid 2.5px var(--main-color);
     margin-top: 1rem;
 }
 
