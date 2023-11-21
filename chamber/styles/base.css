@@ -144,22 +144,6 @@ h3 {
     padding-right: 4rem;
 }
 
-#circus {
-
-    background: linear-gradient(var(--cards), var(--cards)), url(/chamber/images/circus.webp) no-repeat center center;
-    background-size: cover;
-}
-
-#pollo {
-    background: linear-gradient(var(--cards), var(--cards)), url(/chamber/images/pollo.webp) no-repeat center center;
-    background-size: cover;
-}
-
-#mototaxi {
-    background: linear-gradient(var(--cards), var(--cards)), url(/chamber/images/mototaxi.webp) no-repeat center center;
-    background-size: cover;
-}
-
 /* ----------------------- */
 
 body {
