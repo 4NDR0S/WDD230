@@ -37,15 +37,19 @@ function displayForecast(data) {
     // para los iconos(img)
     var iconCode = data.list[1].weather[0].icon;
     const iconsrc = `https://openweathermap.org/img/w/${iconCode}.png`;
+    const desc = data.list[1].weather[0].description;
 
     var iconCode2 = data.list[2].weather[0].icon;
     const iconsrc2 = `https://openweathermap.org/img/w/${iconCode2}.png`;
+    const desc2 = data.list[2].weather[0].description;
 
     var iconCode3 = data.list[3].weather[0].icon;
     const iconsrc3 = `https://openweathermap.org/img/w/${iconCode3}.png`;
+    const desc3 = data.list[3].weather[0].description;
 
     var iconCode4 = data.list[4].weather[0].icon;
     const iconsrc4 = `https://openweathermap.org/img/w/${iconCode4}.png`;
+    const desc4 = data.list[4].weather[0].description;
 
     //codigo inicial:
     // iconD1.setAttribute('src', iconsrc);
@@ -58,21 +62,25 @@ function displayForecast(data) {
     //icon 1
     let icon1 = document.createElement('img');
     icon1.setAttribute('src', iconsrc);
+    icon1.setAttribute('alt', desc);
     iconD1.appendChild(icon1);
 
     //icon 2
     let icon2 = document.createElement('img');
     icon2.setAttribute('src', iconsrc2);
+    icon2.setAttribute('alt', desc2);
     iconD2.appendChild(icon2);
 
     //icon 3
     let icon3 = document.createElement('img');
     icon3.setAttribute('src', iconsrc3);
+    icon3.setAttribute('alt', desc3);
     iconD3.appendChild(icon3);
 
     //icon 4
     let icon4 = document.createElement('img');
     icon4.setAttribute('src', iconsrc4);
+    icon4.setAttribute('alt', desc4);
     iconD4.appendChild(icon4);
 
     // para la temperatura

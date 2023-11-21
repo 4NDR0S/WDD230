@@ -36,6 +36,7 @@
         height: 120px;
     }
 
+
     h1 {
         display: none;
     }
@@ -68,8 +69,9 @@
 
     /* HERO */
 
+
     .hero picture img {
-        max-width: 1450px;
+        max-width: 1700px;
         margin-top: 0;
     }
 
@@ -80,6 +82,7 @@
         transform: translate(-50%, -50%);
         font-size: 60px;
         font-weight: 900;
+
     }
 
     #Join_btn a {
@@ -104,6 +107,10 @@
     }
 
     #member_spot {
+        grid-column: 1/4;
+    }
+
+    #spotlights {
         grid-column: 1/4;
     }
 
@@ -255,5 +262,18 @@
     /* fix an extra line in the hr */
     #directory_body footer hr {
         margin-top: 1rem;
+    }
+
+    .banner {
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+    }
+
+    .banner h3 {
+        font-size: xx-large;
+    }
+
+    .banner p {
+        font-size: x-large;
     }
 }

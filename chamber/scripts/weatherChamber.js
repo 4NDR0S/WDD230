@@ -40,6 +40,7 @@ function displayResults(data) {
 
     let icon = document.createElement('img');
     icon.setAttribute('src', iconsrc);
+    icon.setAttribute('alt', desc);
     weatherIcon.appendChild(icon);
 
     captionDesc.textContent = `${CapitalizeFistLetter(desc)} `;

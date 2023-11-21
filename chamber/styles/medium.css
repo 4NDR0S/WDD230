@@ -8,6 +8,7 @@
         width: auto;
     }
 
+
     #Join_btn {
         position: absolute;
         font-size: 40px;
@@ -36,5 +37,18 @@
     .Directory_menu {
         grid-column: 1/4;
         text-align: right;
+    }
+
+    .banner {
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+    }
+
+    .banner h3 {
+        font-size: x-large;
+    }
+
+    .banner p {
+        font-size: large;
     }
 }

@@ -8,6 +8,8 @@
     --second-color: #E4EDF1;
     --main-font: 'Ubuntu';
     --text-font: roboto;
+    --cards: rgba(195, 222, 255, 0.70);
+    --banner: rgba(236, 246, 191, 0.6);
 }
 
 header {
@@ -32,6 +34,10 @@ header img {
     margin-bottom: 0%;
 }
 
+header nav {
+    font-size: larger;
+}
+
 .hero {
     position: relative;
     display: inline-block;
@@ -40,13 +46,12 @@ header img {
     width: 100%;
     padding-top: 0;
     margin-bottom: 1rem;
-
 }
 
 .hero img {
     width: 100%;
     height: 100%;
-    margin-top: -17px;
+    margin-top: -19px;
     padding-top: 0;
 }
 
@@ -74,6 +79,10 @@ header img {
     padding-right: 1.5%;
 }
 
+#Join_btn:hover {
+    background: linear-gradient(rgba(255, 255, 255, 0.55), rgba(255, 255, 255, 0.521));
+}
+
 #member_spot,
 h2 {
     font-family: var(--main-font);
@@ -92,9 +101,22 @@ h2 {
 
 /* Spotlights */
 
+#spotlights {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3rem;
+    justify-content: center;
+}
+
 .spotlights {
-    padding-bottom: 2rem;
-    padding-top: 0.5rem;
+    padding-bottom: 3rem;
+    max-width: 420px;
+    min-width: 390px;
+    flex-grow: 1;
+}
+
+.spotlights div {
+    padding: 0.2rem;
 }
 
 .spotlights a,
@@ -105,12 +127,37 @@ h3 {
 }
 
 .spotlights h2 {
-    padding-left: 1rem;
+    padding-left: 4rem;
+    background-color: var(--hr);
+    padding-top: 1rem;
+    font-size: larger;
+    margin-top: 0;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    margin-left: 0;
 }
 
 .spotlights h3 {
     text-align: right;
-    padding-right: 1rem;
+    padding-right: 4rem;
+}
+
+#circus {
+
+    background: linear-gradient(var(--cards), var(--cards)), url(/chamber/images/circus.webp) no-repeat center center;
+    background-size: cover;
+}
+
+#pollo {
+    background: linear-gradient(var(--cards), var(--cards)), url(/chamber/images/pollo.webp) no-repeat center center;
+    background-size: cover;
+}
+
+#mototaxi {
+    background: linear-gradient(var(--cards), var(--cards)), url(/chamber/images/mototaxi.webp) no-repeat center center;
+    background-size: cover;
 }
 
 /* ----------------------- */
@@ -724,13 +771,17 @@ form label.top input:required:valid {
 /* Banner */
 .banner {
     background-color: var(--hr);
-    padding: 1rem;
+    padding: 2rem;
     text-align: center;
     margin-top: 0;
     border: solid 2px var(--main-color);
-    padding-top: 0;
     font-family: var(--main-font);
     text-shadow: 0 0 9px rgba(126, 76, 6, 0.817);
+}
+
+.banner {
+    background: linear-gradient(var(--banner), var(--banner)), url(/chamber/images/banner.webp) no-repeat center center;
+    background-size: cover;
 }
 
 .banner p {
@@ -740,5 +791,7 @@ form label.top input:required:valid {
 .close-banner {
     float: right;
     cursor: pointer;
-    padding-top: 1rem;
+    padding-top: 1%;
+    padding-right: 3%;
+    font-size: x-large;
 }
