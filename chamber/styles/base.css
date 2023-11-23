@@ -447,6 +447,16 @@ footer .author_info {
     margin: 0;
 }
 
+#dis-data img {
+    width: 100%;
+    height: auto;
+}
+
+#lima-map {
+    width: 100%;
+    height: auto;
+}
+
 /* Calendar */
 #calendar {
     min-width: 360px;
