@@ -169,6 +169,25 @@
         cursor: pointer;
     }
 
+    .spotlights_cards {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(390px, 1fr));
+    }
+
+    #spotlights {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 3rem;
+    }
+
+    .gold {
+        grid-column: 1/3;
+    }
+
+    .silver {
+        grid-column: 3/4;
+    }
+
 
     /* DISCOVER PAGE */
 
@@ -190,6 +209,11 @@
 
     #calendar {
         width: auto;
+    }
+
+    .img-title {
+        margin-left: 10%;
+        margin-right: 10%;
     }
 
     #dis-images img:hover {
@@ -232,7 +256,6 @@
         grid-template-columns: repeat(auto-fit, minmax(390px, 1fr));
         margin-left: -4%;
     }
-
 
     /* list */
 

@@ -9,9 +9,10 @@
     --main-font: 'Ubuntu';
     --text-font: roboto;
     --cards: rgba(195, 222, 255, 0.70);
-    --banner: rgba(236, 246, 191, 0.6);
+    --banner: rgba(246, 197, 152, 0.6);
 }
 
+/* ----------------- MAIN PAGE ----------------------- */
 header {
     background-color: var(--main-color);
     margin-bottom: 0;
@@ -99,35 +100,61 @@ h2 {
     border-bottom-color: var(--hr);
 }
 
-/* Spotlights */
-
-#spotlights {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 3rem;
-    justify-content: center;
-}
-
-.spotlights {
-    padding-bottom: 3rem;
-    max-width: 420px;
-    min-width: 390px;
-    flex-grow: 1;
-}
-
-.spotlights div {
-    padding: 0.2rem;
-}
-
-.spotlights a,
 p,
 h4,
 h3 {
     font-family: var(--text-font);
 }
 
-.spotlights h2 {
-    padding-left: 4rem;
+/* Spotlights */
+
+.spotlights_cards {
+    background-color: var(--background-card);
+    text-align: center;
+    margin-top: 0;
+    padding: 0.5rem;
+    justify-items: center;
+}
+
+
+.spotlights_cards section {
+    margin: 1rem;
+    border: solid var(--main-color);
+    border-width: 0.1rem;
+    padding-bottom: 1rem;
+    box-shadow: 0 0 30px #777;
+    background-color: white;
+    height: 200px;
+    width: 390px;
+}
+
+
+.spotlights_cards img {
+    height: 45%;
+    /* 95px */
+    width: auto;
+    margin-top: 0.8rem;
+}
+
+
+.spotlights_cards h3 {
+    margin: 0;
+    font-family: var(--main-font);
+}
+
+/* .grid #Directory_cards p { */
+.spotlights_cards p {
+    margin: 0.5rem;
+    font-family: var(--text-font);
+}
+
+/* .grid #Directory_cards a { */
+.spotlights_cards a {
+    text-decoration: none;
+    font-family: var(--text-font);
+}
+
+.silver h2 {
     background-color: var(--hr);
     padding-top: 1rem;
     font-size: larger;
@@ -137,12 +164,41 @@ h3 {
     padding-top: 15px;
     padding-bottom: 15px;
     margin-left: 0;
+    margin-bottom: 0;
+    text-align: center;
 }
 
-.spotlights h3 {
-    text-align: right;
-    padding-right: 4rem;
+.silver {
+    box-shadow: 4px 4px 10px #325286;
+    border-radius: 10px;
+    background-color: var(--background-card);
+    border: solid 2.5px var(--main-color);
+    margin-top: 1rem;
 }
+
+.gold {
+    box-shadow: 4px 4px 10px #325286;
+    border-radius: 10px;
+    background-color: var(--background-card);
+    border: solid 2.5px var(--main-color);
+    margin-top: 1rem;
+
+}
+
+.gold h2 {
+    background-color: var(--hr);
+    padding-top: 1rem;
+    font-size: larger;
+    margin-top: 0;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    margin-left: 0;
+    margin-bottom: 0;
+    text-align: center;
+}
+
 
 /* ----------------------- */
 
@@ -238,6 +294,11 @@ footer .author_info {
 }
 
 /* cards */
+.card hr {
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+
 .card {
     box-shadow: 4px 4px 10px #0a1e3f94;
     border-radius: 10px;
@@ -282,21 +343,6 @@ footer .author_info {
     text-align: center;
 }
 
-/* spotlights */
-.spotlights {
-    box-shadow: 4px 4px 10px #325286;
-    border-radius: 10px;
-    background-color: var(--background-card);
-    border: solid 2.5px var(--main-color);
-    margin-top: 1rem;
-}
-
-.spotlights a {
-    display: block;
-    text-align: center;
-    color: rgb(39, 43, 2);
-    text-decoration: none;
-}
 
 /* MENU BUTTON */
 
@@ -371,6 +417,7 @@ footer .author_info {
     color: white;
 }
 
+/* ----------------- MAIN PAGE ----------------------- */
 
 
 /* DISCOVER PAGE */
@@ -436,11 +483,16 @@ footer .author_info {
 }
 
 /* Images */
+#dis-images {
+    text-align: center;
+}
+
 #dis-images picture {
-    padding-top: 10rem;
+    text-align: center;
 }
 
 #dis-images picture img {
+    max-width: 800px;
     width: 100%;
     height: auto;
     margin-top: 1rem;
@@ -457,6 +509,9 @@ footer .author_info {
     font-size: 30px;
     font-weight: 900;
     margin-bottom: 0;
+    background-color: var(--hr);
+    padding: 0.5rem;
+    border-radius: 10px;
 }
 
 
@@ -764,7 +819,7 @@ form label.top input:required:valid {
 }
 
 .banner {
-    background: linear-gradient(var(--banner), var(--banner)), url(/chamber/images/banner.webp) no-repeat center center;
+    background: linear-gradient(var(--banner), var(--banner));
     background-size: cover;
 }
 

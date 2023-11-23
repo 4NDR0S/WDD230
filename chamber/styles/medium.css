@@ -8,11 +8,20 @@
         width: auto;
     }
 
+    .img-title {
+        margin-left: 5%;
+        margin-right: 5%;
+    }
 
     #Join_btn {
         position: absolute;
         font-size: 40px;
         font-weight: 900;
+    }
+
+    .spotlights_cards {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(390px, 1fr));
     }
 
     .grid {
