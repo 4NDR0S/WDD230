@@ -1,5 +1,5 @@
 const url1 = "https://4ndr0s.github.io/wdd230/chamber/data/members.json";
-// const cards = document.querySelector('#Directory_cards');
+
 const goldCards = document.querySelector('#gold_cards');
 const silverCards = document.querySelector('#silver_cards');
 
