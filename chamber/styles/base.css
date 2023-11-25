@@ -19,14 +19,6 @@ header {
     width: auto;
 }
 
-header h1 {
-    display: none;
-}
-
-h1 {
-    display: none;
-}
-
 header img {
     padding-top: 10px;
     min-height: 60px;
@@ -56,12 +48,24 @@ header nav {
     padding-top: 0;
 }
 
+.hero h1 {
+    font-size: 30px;
+    font-family: var(--main-font);
+    background-color: rgba(44, 40, 35, 0.6);
+    color: var(--second-color);
+    border-radius: 5px;
+    padding: 1rem;
+    width: 250px;
+}
 
-#Join_btn {
+.hero_text {
     position: absolute;
-    top: 50%;
+    top: 40%;
     left: 50%;
     transform: translate(-50%, -50%);
+}
+
+#Join_btn {
     background-color: var(--hr);
     padding: 10px;
     border-radius: 5px;
@@ -76,8 +80,8 @@ header nav {
     font-size: 20px;
     text-decoration: none;
     font-family: var(--main-font);
-    padding-left: 1%;
-    padding-right: 1.5%;
+    padding-left: 1rem;
+    padding-right: 1rem;
 }
 
 #Join_btn:hover {
@@ -125,13 +129,15 @@ h3 {
     box-shadow: 0 0 30px #777;
     background-color: white;
     height: 200px;
-    width: 390px;
+    /* width: 390px; */
+    width: auto;
+    max-width: 390px;
 }
 
 
 .spotlights_cards img {
-    height: 45%;
-    /* 95px */
+    /* height: 45%; */
+    height: 90px;
     width: auto;
     margin-top: 0.8rem;
 }

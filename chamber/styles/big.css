@@ -36,12 +36,6 @@
         height: 120px;
     }
 
-
-    h1 {
-        display: none;
-    }
-
-
     /* 477 × 151 */
     header img {
         grid-column: 1/2;
@@ -75,13 +69,25 @@
         margin-top: 0;
     }
 
-    #Join_btn {
+    .hero_text {
         position: absolute;
-        top: 50%;
+        top: 40%;
         left: 30%;
         transform: translate(-50%, -50%);
+    }
+
+    .hero h1 {
         font-size: 60px;
         font-weight: 900;
+        max-width: 600px;
+        min-width: 500px;
+    }
+
+    #Join_btn {
+        font-size: 60px;
+        font-weight: 900;
+        padding-left: 2rem;
+        padding-right: 2rem;
 
     }
 
@@ -172,6 +178,10 @@
     .spotlights_cards {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(390px, 1fr));
+    }
+
+    .spotlights_cards section {
+        width: 390px;
     }
 
     #spotlights {

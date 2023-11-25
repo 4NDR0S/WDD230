@@ -13,15 +13,33 @@
         margin-right: 5%;
     }
 
-    #Join_btn {
+    .hero_text {
         position: absolute;
+        top: 40%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .hero h1 {
         font-size: 40px;
         font-weight: 900;
+        min-width: 300px;
+    }
+
+    #Join_btn {
+        font-size: 40px;
+        font-weight: 900;
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
     }
 
     .spotlights_cards {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(390px, 1fr));
+    }
+
+    .spotlights_cards section {
+        width: 390px;
     }
 
     .grid {
