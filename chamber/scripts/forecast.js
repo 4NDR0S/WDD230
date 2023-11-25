@@ -18,7 +18,7 @@ async function apiFetch_forecast() {
         const response = await fetch(url_fore);
         if (response.ok) {
             const data = await response.json();
-            console.log(data);
+            // console.log(data);  //para poder ver el archivo json en la consola
             displayForecast(data);
         } else {
             throw Error(await response.text());

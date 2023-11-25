@@ -14,4 +14,4 @@ if (currentDay >= 1 && currentDay <= 3) {
     banner.style.display = 'none';  //aca va none
 }
 
-console.log(currentDay);
+// console.log(currentDay);  //para testear el # de dia

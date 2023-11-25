@@ -14,7 +14,7 @@ async function apiFetch() {
         const response = await fetch(url);
         if (response.ok) {
             const data = await response.json();
-            console.log(data);
+            // console.log(data);  //para poder ver el archivo json en la consola
             displayResults(data);
             displayWindChill(data);
         } else {

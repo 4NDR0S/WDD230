@@ -26,10 +26,6 @@ const dias = [
 ];
 const numeroDia = new Date().getDay();
 const nombreDia = dias[numeroDia];
-console.log("Hoy: ", nombreDia);
-console.log("mañana: ", dias[numeroDia + 1]);
-console.log("pasado mañana: ", dias[numeroDia + 2]);
-console.log("en 3 dias: ", dias[numeroDia + 3]);
 
 const Today = document.querySelector('#today');
 Today.innerHTML = dias[numeroDia];
