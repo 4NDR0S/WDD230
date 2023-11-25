@@ -256,6 +256,15 @@
 
     /* directory */
 
+    .directory_main {
+        gap: 0;
+    }
+
+    .directory_main h2 {
+        grid-column: 1/4;
+        font-size: 40px;
+    }
+
     #Directory_cards {
         grid-column: 1/4;
     }
@@ -265,6 +274,10 @@
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(390px, 1fr));
         margin-left: -4%;
+    }
+
+    .grid section {
+        width: 390px;
     }
 
     /* list */

@@ -129,7 +129,6 @@ h3 {
     box-shadow: 0 0 30px #777;
     background-color: white;
     height: 200px;
-    /* width: 390px; */
     width: auto;
     max-width: 390px;
 }
@@ -634,6 +633,23 @@ form label.top input:required:valid {
     padding: 4rem 6%;
 }
 
+#free {
+    background-color: rgba(132, 179, 233, 0.4);
+    ;
+}
+
+#bronze {
+    background-color: rgba(139, 128, 10, 0.4);
+}
+
+#silver {
+    background-color: rgba(93, 112, 128, 0.4);
+}
+
+#gold {
+    background-color: rgba(227, 220, 12, 0.4);
+}
+
 /*----------- HTML DIRECTORY --------------*/
 #directory_body {
     margin: 0;
@@ -641,6 +657,11 @@ form label.top input:required:valid {
 
 .directory_main {
     padding: 1rem;
+}
+
+.directory_main h2 {
+    text-align: center;
+    margin-bottom: 0;
 }
 
 .Directory_menu {
@@ -662,8 +683,7 @@ form label.top input:required:valid {
     margin-top: 1rem;
     box-shadow: 0 0 60px #777;
     padding: 0.5rem;
-    /* margin-left: -5%;
-    margin-right: -5%; */
+    justify-items: center;
 }
 
 /* .grid #Directory_cards section { */
@@ -675,12 +695,13 @@ form label.top input:required:valid {
     box-shadow: 0 0 30px #777;
     background-color: white;
     height: 200px;
-    width: 390px;
+    width: auto;
+    max-width: 390px;
 }
 
 /* .grid #Directory_cards img { */
 .grid img {
-    height: 45%;
+    height: 90px;
     /* 95px */
     width: auto;
     margin-top: 0.8rem;

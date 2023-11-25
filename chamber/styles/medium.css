@@ -54,11 +54,19 @@
         margin-right: -5%;
     }
 
+    .grid section {
+        width: 390px;
+    }
+
     .list section {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1.3fr;
         text-align: left;
         width: 100%;
+    }
+
+    .directory_main h2 {
+        font-size: 33px;
     }
 
     .Directory_menu {

@@ -5,7 +5,7 @@ async function getMembersData() {
     const response = await fetch(url);  //almacena la respuesta con el metodo tech
     const data = await response.json();   //convierte la respuesta a un objeto JSON
     displayMembers(data.members);
-    console.table(data.members);
+    // console.table(data.members);  //muestra en la consola el archivo json en una tabla 
 }
 
 
