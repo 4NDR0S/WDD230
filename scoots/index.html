@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Anthony Vela">
+    <meta name="description" content="WDD 230 | Anthony Vela Paredes | Cozumel Scoots">
+    <title>Cozumel Scoots | Anthony Vela - WDD 230 | </title>
+    <link rel="icon" href="favicon.scoot.ico">
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Nova+Square&family=Raleway:ital@1&display=swap"
+        rel="stylesheet">
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" type="text/css" href="styles/base.css">
+    <link rel="stylesheet" type="text/css" href="styles/medium.css">
+    <link rel="stylesheet" type="text/css" href="styles/larger.css">
+    <!-- META OG -->
+
+    <meta property="og:title" content="Cozumel Scoots | Anthony Vela - WDD 230">
+    <meta property="og:type" content="website">
+    <meta property="og:type" content="website">
+    <meta property="og:image"
+        content="https://www.eleconomista.com.mx/__export/1672707408677/sites/eleconomista/img/2022/12/01/cruzero-cozumel-info-oficial.png_1902800913.png">
+    <meta property="og:url" content="https://4ndr0s.github.io/wdd230/">
+</head>
+
+<body>
+    <header>
+        <div class="cozumel_header_logo">
+            <img id="header_logo" src="images/scooter-logo.webp" alt="scoot_logo">
+            <div>
+                <h1 id="cozumel_header">Cozumel</h1>
+                <h1 id="scoots_header">Scoots</h1>
+            </div>
+        </div>
+        <!-- icons are 80x80  -->
+        <div class="social_div">
+            <a href="https://www.facebook.com/" target="_blank">
+                <img src="images/facebook_icon.webp" alt="facebook_icon" class="social"></a>
+            <a href="https://twitter.com/" target="_blank">
+                <img src="images/twitter_icon.webp" alt="twitter_icon" class="social"></a>
+            <a href="https://www.linkedin.com/" target="_blank">
+                <img src="images/liinkedin_icon.webp" alt="instagram_icon" class="social"></a>
+        </div>
+        <div class="nav">
+            <nav>
+                <button id="menu_scoots" title="menu"></button>
+                <ul class="scoot_navigation">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="rentals.html">Rentals</a></li>
+                    <li><a href="reservations.html">Reservations</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div id="dark">
+
+    </div>
+    <div class="hero_scoot">
+        <picture>
+            <source media="(max-width: 600px)" srcset="images/cozumel_hero_small.webp">
+            <source media="(max-width: 1000px)" srcset="images/cozumel_hero_medium.webp">
+            <img src="images/cozumel_hero.webp" alt="Playa Cozumel" width="1800" height="600">
+        </picture>
+    </div>
+
+    <main>
+
+        <section id="Rental_card" class="card">
+            <div>
+                <h2>Rental Information</h2>
+                <h3>Types of Rentals</h3>
+                <ul>
+                    <li>Honda Motor Scooters</li>
+                    <li>Side-by-Side ATVs</li>
+                    <li>Jeeps</li>
+                </ul>
+            </div>
+            <div class="boton">
+                <img src="images/card_scooter.webp" alt="scooter_yellow">
+                <a id="boton_reserva" href="#">Book Now</a>
+            </div>
+        </section>
+
+        <section id="Weather_card" class="card">
+            <h2>Weather</h2>
+            <h3>Cozumel, Quintana Roo, México ( <span id="today"></span> )</h3>
+            <div id="weather_box">
+                <div id="weatherCol1">
+                    <div id="wIcon">
+                        <div id="weather-icon"></div>
+                        <p><span id="current-temp"></span></p>
+                    </div>
+                    <p id="capDesc"><span id="captionDesc"></span></p>
+                    <p>Feels like : <span id="Flike"></span></p>
+                </div>
+                <div id="weatherCol2">
+                    <p>Humidity : <span id="humidity"></span></p>
+                    <p>Max temp: <span id="maxTemp"></span></p>
+                    <p>Wind: <span id="windSpeed"></span> mph</p>
+                </div>
+            </div>
+            <h2>Forecast (4 days)</h2>
+            <hr>
+            <div id="forecast_box">
+                <div>
+                    <p class="forecast_days"><span id="day1"></span></p>
+                    <div class="fore_icon" id="day1-icon"></div>
+                    <p><span id="day1-temp"></span></p>
+                </div>
+                <div>
+                    <p class="forecast_days"><span id="day2"></span></p>
+                    <div class="fore_icon" id="day2-icon"></div>
+                    <p><span id="day2-temp"></span></p>
+                </div>
+                <div>
+                    <p class="forecast_days"><span id="day3"></span></p>
+                    <div class="fore_icon" id="day3-icon"></div>
+                    <p><span id="day3-temp"></span></p>
+                </div>
+                <div>
+                    <p class="forecast_days"><span id="day4"></span></p>
+                    <div class="fore_icon" id="day4-icon"></div>
+                    <p><span id="day4-temp"></span></p>
+                </div>
+            </div>
+            <hr>
+            <div class="weather_description">
+                <h2>Description</h2>
+                <p>Located in the Caribbean Sea, about 50 km. from Cancun, Cozumel Island whose name in Mayan-Yucatec
+                    It means "Land of Swallows", it is the largest inhabited island in Mexico.</p>
+                <h3>Weather</h3>
+                <p>Cozumel has a humid weather, with an average annual temperature greater than 18°C (65°F).</p>
+                <p>The months in which the greatest rainfall occurs is during the summer, May to September.</p>
+                <h3>What to pack?</h3>
+                <p>As it is a beach destination, it is necessary to bring a swimsuit, sandals, sunscreen, hat, mosquito
+                    repellent, and light clothing such as: shorts, Bermuda shorts, or skirts.</p>
+                <h3>Parties and Celebrations on Cozumel island</h3>
+                <ul>
+                    <li>February 2: Candlemas Day</li>
+                    <li>May: Festival of the Holy Cross, Cedral Fair</li>
+                    <li>November 1 and 2: Day of the Dead</li>
+                    <li>December 12: Feast of the Virgin of Guadalupe</li>
+                </ul>
+                <!-- <p>February 2: Candlemas Day</p>
+                <p>May: Festival of the Holy Cross, Cedral Fair</p>
+                <p>November 1 and 2: Day of the Dead</p>
+                <p>December 12: Feast of the Virgin of Guadalupe</p> -->
+            </div>
+        </section>
+
+        <div class="banner">
+            <h2>Resources</h2>
+            <picture>
+                <source media="(max-width: 600px)" srcset="images/scuba_banner_small.webp">
+                <source media="(max-width: 1000px)" srcset="images/scuba_banner_medium.webp">
+                <img src="images/scuba_banner.webp" alt="scuba diving" width="1900" height="600" loading="lazy">
+            </picture>
+        </div>
+
+        <!-- all img width = 550px/600px -->
+
+        <div id="display_img">
+            <div class="card">
+                <h2>Beaches 🏖️</h2>
+                <div class="img_padding">
+                    <img src="images/turtle.webp" alt="turtle" loading="lazy">
+                </div>
+                <div class="img_padding">
+                    <img src="images/beach_1.webp" alt="beach" loading="lazy">
+                </div>
+            </div>
+            <div class="card">
+                <h2>Scuba Diving 🤿</h2>
+                <div class="img_padding">
+                    <img src="images/cozumel_scuba_diving.webp" alt="scuba diving" loading="lazy">
+                </div>
+                <div class="img_padding">
+                    <img src="images/cozumel_underwater.webp" alt="cozumel underwater" loading="lazy">
+                </div>
+            </div>
+            <div class="card">
+                <h2>Archeology 🗿</h2>
+                <div class="img_padding">
+                    <img src="images/cozumel_el_caracol.webp" alt="cozumel el caracol" loading="lazy">
+                </div>
+                <div class="img_padding">
+                    <img src="images/cozumel_castillo_real.webp" alt="cozumel castillo real" loading="lazy">
+                </div>
+
+            </div>
+            <div class="card">
+                <h2>Resorts 🏨</h2>
+                <div class="img_padding">
+                    <img src="images/cozumel_resort.webp" alt="cozumel resort" loading="lazy">
+                </div>
+                <div class="img_padding">
+                    <img src="images/cozumel_resort2.webp" alt="cozumel resort" loading="lazy">
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="social_div_f">
+            <a href="https://www.facebook.com/" target="_blank">
+                <img src="images/facebook_icon.webp" alt="facebook_icon" class="social"></a>
+
+            <a href="https://twitter.com/" target="_blank">
+                <img src="images/twitter_icon.webp" alt="twitter_icon" class="social"></a>
+
+            <a href="https://www.linkedin.com/" target="_blank">
+                <img src="images/liinkedin_icon.webp" alt="liinkedin_icon" class="social"></a>
+
+            <a href="https://www.instagram.com/" target="_blank">
+                <img src="images/instagram_icon.webp" alt="instagram_icon" class="social"></a>
+
+            <a href="https://www.youtube.com/" target="_blank">
+                <img src="images/youtube_icon.webp" alt="youtube_icon" class="social"></a>
+
+        </div>
+
+        <img id="footer_logo" src="images/scooter-logo.webp" alt="scoot_logo">
+        <p id="firstParagraph">Copyright &copy; <span id="year"></span> | Cozumel Scoot, inc.</p>
+    </footer>
+    <script src="scripts/nav.js"></script>
+    <!-- weather stuff -->
+    <script src="scripts/getdates.js"></script>
+    <script src="scripts/weatherScoots.js"></script>
+    <script src="scripts/forecastScoots.js"></script>
+
+</body>
+
+</html>

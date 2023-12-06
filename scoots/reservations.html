@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Anthony Vela">
+    <meta name="description" content="WDD 230 | Anthony Vela Paredes | Cozumel Scoots">
+    <title>Cozumel Scoots | Anthony Vela - WDD 230 | </title>
+    <link rel="icon" href="favicon.scoot.ico">
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Nova+Square&family=Raleway:ital@1&display=swap"
+        rel="stylesheet">
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" type="text/css" href="styles/base.css">
+    <link rel="stylesheet" type="text/css" href="styles/medium.css">
+    <link rel="stylesheet" type="text/css" href="styles/larger.css">
+    <!-- META OG -->
+
+    <meta property="og:title" content="Cozumel Scoots | Anthony Vela - WDD 230">
+    <meta property="og:type" content="website">
+    <meta property="og:type" content="website">
+    <meta property="og:image"
+        content="https://www.eleconomista.com.mx/__export/1672707408677/sites/eleconomista/img/2022/12/01/cruzero-cozumel-info-oficial.png_1902800913.png">
+    <meta property="og:url" content="https://4ndr0s.github.io/wdd230/">
+</head>
+
+<body>
+    <header>
+        <div class="cozumel_header_logo">
+            <img id="header_logo" src="images/scooter-logo.webp" alt="scoot_logo">
+            <div>
+                <h1 id="cozumel_header">Cozumel</h1>
+                <h1 id="scoots_header">Scoots</h1>
+            </div>
+        </div>
+        <!-- icons are 80x80  -->
+        <div class="social_div">
+            <a href="https://www.facebook.com/" target="_blank">
+                <img src="images/facebook_icon.webp" alt="facebook_icon" class="social"></a>
+            <a href="https://twitter.com/" target="_blank">
+                <img src="images/twitter_icon.webp" alt="twitter_icon" class="social"></a>
+            <a href="https://www.linkedin.com/" target="_blank">
+                <img src="images/liinkedin_icon.webp" alt="instagram_icon" class="social"></a>
+        </div>
+        <div class="nav">
+            <nav>
+                <button id="menu_scoots" title="menu"></button>
+                <ul class="scoot_navigation">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="rentals.html">Rentals</a></li>
+                    <li><a href="reservations.html">Reservations</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div id="dark">
+
+    </div>
+    <div class="hero_scoot">
+        <picture>
+            <source media="(max-width: 600px)" srcset="images/cozumel_hero_small.webp">
+            <source media="(max-width: 1000px)" srcset="images/cozumel_hero_medium.webp">
+            <img src="images/cozumel_hero.webp" alt="Playa Cozumel" width="1800" height="600">
+        </picture>
+    </div>
+
+    <main class="reservations-main">
+        <div id="info-r" class="card">
+            <h2>Rental Services and Agreements</h2>
+            <ol>
+                <li>A $50 security deposit is required to confirm reservations.</li>
+                <li>A valid drivers license is required in hand at the time of rental.</li>
+                <li>No one under the age of 12 years of age are allowed to ride on the scooters.</li>
+                <li>Fuel charge is not included.</li>
+                <li>Unlimited mileage.</li>
+                <li>Liability insurance is included.</li>
+                <li>Damage insurance is available for purchase.</li>
+                <li>Free delivery to Cozumel hotels or Airbnbs for 2+ day rentals.</li>
+                <li>Payment via Google Pay, Apple Pay, cash, credit card, debit card, or venmo.</li>
+                <li>Rentals may be returned to either physical location.</li>
+            </ol>
+        </div>
+        <div id="from-r">
+            <form method="get" action="thankyou.html">
+                <fieldset id="f1">
+                    <legend>Person Details</legend>
+                    <label class="top" for="fname">Full Name: <input type="text" id="fname" name="fname"
+                            required=""></label>
+
+                    <label class="top" for="email">Email:
+                        <input type="email" pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$" id="email" name="email"
+                            placeholder="example@gmail.com" title="Please enter a valid email address!"
+                            autocomplete="email" required=""> </label>
+
+                    <label class="top" for="pnumber">Phone number: <input type="tel" id="pnumber" name="pnumber"
+                            required=""></label>
+                    <label class="top" for="location">Home State | Country:<input type=" text" id="location"
+                            name="location" required=""></label>
+                    <label class="top" for="cruise line">Cruise Line (if applicable): <input type="text"
+                            id="cruise line" name="cruise line"></label>
+                </fieldset>
+                <fieldset id="f2">
+                    <legend>Rental Details</legend>
+                    <div>Rental Type</div>
+                    <label class="sbs"><input type="radio" name="rtype" value="metro">Honda Metro Scooter</label>
+                    <label class="sbs"><input type="radio" name="rtype" value="dio">Honda Dio Scooter</label>
+                    <label class="sbs"><input type="radio" name="rtype" value="pcx150">Honda PCX150 Scooter</label>
+                    <label class="sbs"><input type="radio" name="rtype" value="pioneer">Honda Pioneer ATV</label>
+                    <label class="sbs"><input type="radio" name="rtype" value="jeep-4">Jeep Wrangler - 4 door</label>
+                    <label class="sbs"><input type="radio" name="rtype" value="jeep-2">Jeep Wrangler - 2 door</label>
+
+                    <label class="top" for="arrival">Arrival date: <input type="date" id="arrival" /></label>
+                    <label class="top" for="departure">Departure date: <input type="date" id="departure" /></label>
+                </fieldset>
+                <fieldset id="f3">
+                    <legend>Accommodations | Comments</legend>
+                    <label class="top" for="needs">Needs | Comments: <textarea name="bdescription" rows="3"
+                            id="needs"></textarea></label>
+                    <label class="top" for="drop-off">Location of a drop-off request: <textarea name="bdescription"
+                            rows="3" id="drop-off"></textarea></label>
+                </fieldset>
+                <!-- timestamp -->
+                <label><input type="hidden" name="timestamp" id="timestamp"></label>
+                <button type="submit" id="r_boton">Book Now!</button>
+            </form>
+        </div>
+
+    </main>
+    <footer>
+        <div class="social_div_f">
+            <a href="https://www.facebook.com/" target="_blank">
+                <img src="images/facebook_icon.webp" alt="facebook_icon" class="social"></a>
+
+            <a href="https://twitter.com/" target="_blank">
+                <img src="images/twitter_icon.webp" alt="twitter_icon" class="social"></a>
+
+            <a href="https://www.linkedin.com/" target="_blank">
+                <img src="images/liinkedin_icon.webp" alt="liinkedin_icon" class="social"></a>
+
+            <a href="https://www.instagram.com/" target="_blank">
+                <img src="images/instagram_icon.webp" alt="instagram_icon" class="social"></a>
+
+            <a href="https://www.youtube.com/" target="_blank">
+                <img src="images/youtube_icon.webp" alt="youtube_icon" class="social"></a>
+
+        </div>
+
+        <img id="footer_logo" src="images/scooter-logo.webp" alt="scoot_logo">
+        <p id="firstParagraph">Copyright &copy; <span id="year"></span> | Cozumel Scoot, inc.</p>
+    </footer>
+    <script src="scripts/nav.js"></script>
+
+    <script src="scripts/form.js"></script>
+
+</body>
+
+</html>

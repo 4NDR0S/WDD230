@@ -1,0 +1,41 @@
+@media screen and (min-width: 600px) and (max-width:999px) {
+
+
+
+
+
+
+    /*---------------- RENTAL PAGE ----------------*/
+    .rentals-main table {
+        box-shadow: 0 0 20px var(--footer);
+    }
+
+    .rentals-main table {
+        position: relative;
+        margin-top: -25%;
+    }
+
+    .rentals-main th {
+        padding: 1rem;
+        font-size: 15px auto;
+    }
+
+    td {
+        padding: 8px 12px;
+        font-size: 13px auto;
+    }
+
+    /*---------------- RENTAL PAGE ----------------*/
+
+    /*---------------- RESERVATION PAGE ----------------*/
+
+    #info-r {
+        position: relative;
+        margin-top: -25%;
+    }
+
+    #r_boton {
+        height: 70px;
+        width: 200px;
+    }
+}

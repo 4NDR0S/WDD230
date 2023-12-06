@@ -1,0 +1,594 @@
+:root {
+    --green: #22771a;
+    --yellow: #fae957;
+    --blue: #2954a3;
+    --logo_blue: #2FB2FE;
+    --background: #04accc;
+    --sand: #EDEDE3;
+    --footer: #AEB09B;
+    /* fonts */
+    --logo-font: 'Lobster', sans-serif;
+    --main-font: 'Nova Square', sans-serif;
+    --text-font: 'Raleway', sans-serif;
+
+    /* font-family: 'Nova Square', sans-serif;
+    font-family: 'Raleway', sans-serif; */
+}
+
+/*---------------- HEADER ----------------*/
+header {
+    /* background: transparent; */
+    background-color: rgba(29, 29, 29, 0.15);
+    backdrop-filter: blur(10px);
+    margin-bottom: 0;
+    width: 100%;
+    position: absolute;
+    z-index: 1;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    text-align: center;
+}
+
+
+header nav {
+    font-size: larger;
+    font-family: var(--main-font);
+}
+
+#header_logo {
+    width: auto;
+    height: 50px;
+    margin-bottom: 0;
+    text-align: center;
+}
+
+.cozumel_header_logo {
+    display: inline-block;
+    text-align: center;
+    max-width: 170px;
+    justify-content: center;
+}
+
+.cozumel_header_logo div {
+    margin-top: 0;
+    display: inline-flex;
+}
+
+.cozumel_header_logo h1 {
+    font-size: 30px;
+    font-family: var(--logo-font);
+    margin-top: 0;
+    margin-bottom: 0;
+    font-weight: bold;
+
+}
+
+#cozumel_header {
+    color: var(--yellow);
+    text-shadow: 0 0 5px black;
+}
+
+#scoots_header {
+    color: var(--logo_blue);
+    text-shadow: 0 0 5px black;
+}
+
+.social_div {
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.social {
+    width: auto;
+    height: 30px;
+    margin-right: 0.4rem;
+    margin-left: 0.4rem;
+    padding: 0;
+}
+
+.social:hover {
+    background-color: var(--yellow);
+    border-radius: 10px;
+    padding: 0;
+}
+
+/*---------------- HEADER ----------------*/
+
+
+body {
+    margin: 0;
+}
+
+.hero_scoot {
+    position: absolute;
+    margin-top: 0;
+}
+
+.hero_scoot img {
+    width: 100%;
+    height: 100%;
+}
+
+/*---------------- MENU BUTTON ----------------*/
+
+#menu_scoots {
+    font-size: 2rem;
+    border: none;
+    /* padding: 3px 7px 6px; */
+    background-color: #eeeeee17;
+    color: #000;
+    position: absolute;
+    text-align: center;
+    margin-left: -45%;
+    margin-top: -11rem;
+}
+
+#menu_scoots::before {
+    content: "☰";
+}
+
+#menu_scoots.open::before {
+    content: "✕";
+}
+
+.scoot_navigation {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    color: #000000;
+    font-family: var(--main-font);
+
+}
+
+.scoot_navigation li {
+    display: none;
+    padding: 1rem;
+}
+
+.scoot_navigation li a {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    color: var(--green);
+}
+
+.scoot_navigation li a:hover {
+    color: var(--yellow);
+}
+
+/* when the button is clicked - the open class is toggle (added/removed) and accounted for here */
+.open li {
+    display: block;
+}
+
+.open li a {
+    display: block;
+}
+
+/*---------------- MENU BUTTON ----------------*/
+
+/*---------------- MAIN ----------------*/
+main {
+    padding-top: 67%;
+}
+
+.card {
+    justify-content: center;
+    border: solid var(--background) 8px;
+    min-width: 300px;
+    height: auto;
+    /* background: transparent;
+    backdrop-filter: blur(10px); */
+    background-color: var(--sand);
+    box-shadow: 0 4px 10px var(--footer);
+}
+
+.card p,
+.card li {
+    font-family: var(--text-font);
+}
+
+#Rental_card {
+    /* position: absolute;
+    z-index: 0; */
+    display: grid;
+    grid-template-columns: 2fr 1.5fr;
+    gap: 1rem;
+    background: transparent;
+    backdrop-filter: blur(10px);
+}
+
+#Rental_card h2,
+h3 {
+    font-family: var(--main-font);
+    margin-left: 1rem;
+}
+
+#Rental_card img {
+    margin-top: 1rem;
+    width: 65%;
+    height: auto;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    padding-right: 2%;
+}
+
+#Rental_card ul li {
+    font-family: var(--text-font);
+}
+
+.boton {
+    display: block;
+    grid-column: 2/3;
+    margin-bottom: 1rem;
+}
+
+#boton_reserva {
+    background-color: #3165bf;
+    padding: 0.5rem;
+    font-family: var(--logo-font);
+    font-size: 25px;
+    text-decoration: none;
+    color: var(--yellow);
+    margin-top: -1rem;
+    margin-left: 8%;
+}
+
+/*---------------- MAIN ----------------*/
+
+/* weather */
+#Weather_card {
+    margin-top: 1rem;
+}
+
+#Weather_card h2 {
+    text-align: center;
+    font-family: var(--main-font);
+}
+
+#Weather_card h3 {
+    text-align: center;
+    margin-bottom: 0;
+    padding-left: 0;
+}
+
+#weather_box {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 2.5rem;
+    justify-content: center;
+}
+
+#weatherCol1 {
+    grid-column: 1/2;
+    text-align: right;
+}
+
+#weatherCol1 p,
+#weatherCol2 p {
+    padding-left: 0;
+}
+
+#wIcon {
+    display: inline-flex;
+}
+
+#wIcon p {
+    padding-left: 0;
+}
+
+#capDesc {
+    margin-top: -0.2rem;
+}
+
+#weatherCol2 {
+    grid-column: 2/3;
+    margin-top: 0.1rem;
+}
+
+/* forecast */
+#forecast_box {
+    grid-column: 1/3;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    justify-content: center;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+}
+
+#forecast_box p {
+    padding-left: 1rem;
+    text-align: center;
+    margin-top: -1rem;
+    padding-top: 0;
+    margin-bottom: 0.5rem;
+}
+
+.forecast_days {
+    font-weight: 700;
+}
+
+.fore_icon {
+    display: flex;
+}
+
+#forecast_box img {
+    padding-bottom: 0.4rem;
+    margin-top: -1rem;
+    text-align: center;
+    padding-left: 1rem;
+}
+
+#forecast_box div {
+    justify-content: center;
+}
+
+/* forecast */
+
+.weather_description {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+}
+
+/* banner */
+.banner {
+    margin-top: 1rem;
+}
+
+.banner img {
+    width: 100%;
+    height: 100%;
+}
+
+.banner h2 {
+    margin-left: 1rem;
+    font-family: var(--main-font);
+    color: var(--sand);
+    position: absolute;
+    z-index: 1;
+    font-size: 40px;
+
+}
+
+/* banner */
+
+/* display img */
+
+#display_img {
+    font-family: var(--main-font);
+    text-align: center;
+}
+
+#display_img div {
+    margin-top: 1rem;
+}
+
+.img_padding {
+    padding: 0.6rem;
+    background-color: var(--yellow);
+    margin: 1rem;
+    box-shadow: 0 0 10px var(--green);
+}
+
+#display_img img {
+    width: 100%;
+    height: auto;
+    box-shadow: 0 0 5px var(--green);
+    max-width: 530px;
+}
+
+/*---------------- FOOTER ----------------*/
+footer {
+    margin-top: 2rem;
+    padding: 1rem;
+    padding-top: 2rem;
+    background-color: var(--footer);
+    text-align: center;
+}
+
+#footer_logo {
+    margin-top: 1rem;
+    width: 135px;
+    height: auto;
+    text-align: center;
+}
+
+footer p {
+    font-family: var(--main-font);
+    margin-top: 0;
+}
+
+/*---------------- FOOTER ----------------*/
+
+
+/*---------------- FOOTER ----------------*/
+
+/*---------------- RENTAL PAGE ----------------*/
+.rentals-main table {
+    min-width: 390px;
+
+    margin: 20px auto;
+    border: thin solid var(--footer);
+    border-collapse: collapse;
+}
+
+.rentals-main thead {
+    display: table-header-group;
+    vertical-align: middle;
+    border-color: inherit;
+    font-family: var(--main-font);
+
+}
+
+#blackspace {
+    background-color: var(--yellow);
+}
+
+.rentals-main th {
+    background-color: var(--yellow);
+    padding: 0.1rem;
+    border-width: 0;
+    font-size: 12px auto;
+}
+
+.rentals-main tbody {
+    display: table-row-group;
+    vertical-align: middle;
+    border-color: inherit;
+    font-family: var(--text-font);
+}
+
+.rentals-main tbody tr:nth-child(odd) {
+    background-color: var(--sand);
+}
+
+td {
+    padding: 4px 4px;
+    text-align: center;
+    border: solid var(--border);
+    border-width: 1px;
+    font-size: 12px auto;
+}
+
+/* rental cards */
+#rental_cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    padding: 1rem;
+    font-family: var(--main-font);
+}
+
+#rental_cards section {
+    text-align: center;
+    margin: 0.25rem;
+    padding: 0.35rem;
+    background-color: var(--sand);
+    border: 3px solid var(--background);
+    box-shadow: 0 0 20px var(--footer);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-shadow: 0 0 15px var(--shadow);
+}
+
+#rental_cards section h2 {
+    font-size: 20px;
+}
+
+#rental_cards section img {
+    height: 300px;
+    width: auto;
+}
+
+/*---------------- RENTAL PAGE ----------------*/
+#info-r {
+    margin: 2rem 1rem;
+    border: solid var(--background) 6px;
+    width: auto;
+}
+
+#info-r h2 {
+    font-family: var(--main-font);
+    padding: 1rem;
+}
+
+#info-r ol {
+    font-family: var(--text-font);
+    list-style-type: unset;
+}
+
+#info-r ol li {
+    padding: 0.5rem;
+}
+
+/* ------------- form ------------- */
+#from-r {
+    justify-content: center;
+}
+
+form fieldset {
+    margin: 2rem 1rem;
+    border: 5px solid var(--background);
+    padding: 0.5rem 2%;
+    max-width: auto;
+    min-width: 21rem;
+}
+
+form legend {
+    margin: 0 1rem;
+    padding: 0 0.5rem;
+    font-family: var(--main-font);
+    font-size: larger;
+    font-weight: 800;
+}
+
+legend {
+    box-sizing: border-box;
+    color: inherit;
+    display: table;
+    max-width: 100%;
+    padding: 0;
+    white-space: normal;
+}
+
+form label.top,
+form div {
+    display: block;
+    padding-top: 1rem;
+    font-size: .8rem;
+    font-family: var(--text-font);
+}
+
+form label.top input:required {
+    border-left: red solid 5px;
+}
+
+form label.top input,
+form label.top select,
+form label.top textarea {
+    display: block;
+    font-size: 1rem;
+    border: solid 1px var(--hr);
+    border-radius: 5px;
+    padding: 0.75rem;
+    color: #555;
+    width: 100%;
+    max-width: 85%;
+    min-width: 18rem;
+    background-color: var(--sand);
+}
+
+button,
+input {
+    overflow: visible;
+}
+
+button,
+input,
+optgroup,
+select,
+textarea {
+    font-family: var(--text-font);
+    font-size: 100%;
+    line-height: 1.15;
+    margin: 0;
+}
+
+form label.sbs {
+    display: block;
+    padding: 0.75rem 0;
+    font-family: var(--text-font);
+}
+
+#r_boton {
+    background-color: #3165bf;
+    padding: 0.6rem;
+    font-family: var(--logo-font);
+    font-size: 30px;
+    color: var(--yellow);
+    margin-left: 8rem;
+}
+
+/* ------------- form ------------- */

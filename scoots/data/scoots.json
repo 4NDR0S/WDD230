@@ -1,0 +1,82 @@
+{
+    "scoots": [
+        {
+            "name": "~Honda Metro Scooter",
+            "persons": "1",
+            "Reservation": {
+                "Half_Day": "$20",
+                "Full_Day": "$30"
+            },
+            "Walk_In": {
+                "Half_Day": "$25",
+                "Full_Day": "$35"
+            },
+            "imgurl": "images/honda_metro.webp"
+        },
+        {
+            "name": "~Honda Dio Scooter",
+            "persons": "2",
+            "Reservation": {
+                "Half_Day": "$30",
+                "Full_Day": "$40"
+            },
+            "Walk_In": {
+                "Half_Day": "$35",
+                "Full_Day": "$45"
+            },
+            "imgurl": "images/Honda_Dio_Scooter.webp"
+        },
+        {
+            "name": "~Honda PCX150 Scooter",
+            "persons": "2",
+            "Reservation": {
+                "Half_Day": "$40",
+                "Full_Day": "$50"
+            },
+            "Walk_In": {
+                "Half_Day": "$45",
+                "Full_Day": "$55"
+            },
+            "imgurl": "images/Honda_PCX150.webp"
+        },
+        {
+            "name": "Honda Pioneer ATV",
+            "persons": "4",
+            "Reservation": {
+                "Half_Day": "$50",
+                "Full_Day": "$70"
+            },
+            "Walk_In": {
+                "Half_Day": "$60",
+                "Full_Day": "$80"
+            },
+            "imgurl": "images/Honda_Pioneer_ATV.webp"
+        },
+        {
+            "name": "Jeep Wrangler - 4 door with a/c",
+            "persons": "5",
+            "Reservation": {
+                "Half_Day": "$70",
+                "Full_Day": "$100"
+            },
+            "Walk_In": {
+                "Half_Day": "$85",
+                "Full_Day": "$125"
+            },
+            "imgurl": "images/Jeep_Wrangler_4.webp"
+        },
+        {
+            "name": "Jeep Wrangler - 2 door",
+            "persons": "4",
+            "Reservation": {
+                "Half_Day": "$60",
+                "Full_Day": "$85"
+            },
+            "Walk_In": {
+                "Half_Day": "$70",
+                "Full_Day": "$90"
+            },
+            "imgurl": "images/Jeep_Wrangler_2.webp"
+        }
+    ]
+}
