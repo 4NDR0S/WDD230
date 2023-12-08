@@ -109,6 +109,37 @@ body {
     height: 100%;
 }
 
+/* alert */
+.alert {
+    /* position: absolute; */
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    padding: 1rem 0;
+    margin: 0;
+
+    font-family: var(--text-font);
+    /* background: transparent;
+    backdrop-filter: blur(20px); */
+    background-color: rgba(22, 22, 22, 0.6);
+    backdrop-filter: blur(20px);
+
+    font-size: 14px;
+}
+
+.close-alert {
+    color: white;
+}
+
+#alert_text {
+    color: white;
+}
+
+/* alert */
+
 /*---------------- MENU BUTTON ----------------*/
 
 #menu_scoots {
@@ -348,8 +379,7 @@ h3 {
     color: var(--sand);
     position: absolute;
     z-index: 1;
-    font-size: 40px;
-
+    font-size: 42px;
 }
 
 /* banner */
@@ -592,3 +622,50 @@ form label.sbs {
 }
 
 /* ------------- form ------------- */
+/*---------------- RENTAL PAGE ----------------*/
+
+/*---------------- CONTACT PAGE ----------------*/
+#contact_info {
+    padding: 1rem;
+    margin: 2rem 1rem;
+    margin-top: -0.5rem;
+}
+
+#contact_info h2 {
+    font-family: var(--main-font);
+    text-align: center;
+}
+
+#maps {
+    margin: 0;
+    text-align: center;
+}
+
+#maps h3 {
+    margin-bottom: 0;
+}
+
+iframe {
+    margin-top: 0;
+    padding: 1rem 2%;
+    width: 94%;
+    height: 300px;
+    border-radius: 15px;
+    border: 0;
+}
+
+#map1,
+#map2 {
+    margin: 2rem 1rem;
+}
+
+#c_boton {
+    background-color: #3165bf;
+    padding: 0.6rem;
+    font-family: var(--logo-font);
+    font-size: 30px;
+    color: var(--yellow);
+    margin-left: 8rem;
+}
+
+/*---------------- CONTACT PAGE ----------------*/

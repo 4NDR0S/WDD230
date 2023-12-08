@@ -22,7 +22,6 @@
 
     <meta property="og:title" content="Cozumel Scoots | Anthony Vela - WDD 230">
     <meta property="og:type" content="website">
-    <meta property="og:type" content="website">
     <meta property="og:image"
         content="https://www.eleconomista.com.mx/__export/1672707408677/sites/eleconomista/img/2022/12/01/cruzero-cozumel-info-oficial.png_1902800913.png">
     <meta property="og:url" content="https://4ndr0s.github.io/wdd230/">
@@ -66,11 +65,15 @@
         <picture>
             <source media="(max-width: 600px)" srcset="images/cozumel_hero_small.webp">
             <source media="(max-width: 1000px)" srcset="images/cozumel_hero_medium.webp">
-            <img src="images/cozumel_hero.webp" alt="Playa Cozumel" width="1800" height="600">
+            <img src="images/cozumel_hero.webp" alt="Playa Cozumel" width="2000" height="600">
         </picture>
     </div>
 
     <main>
+        <div class="alert"><span class="close-alert">✕</span>
+            <p id="alert_text"></p>
+            <p id="alert_uvi"></p>
+        </div>
 
         <section id="Rental_card" class="card">
             <div>
@@ -84,7 +87,7 @@
             </div>
             <div class="boton">
                 <img src="images/card_scooter.webp" alt="scooter_yellow">
-                <a id="boton_reserva" href="#">Book Now</a>
+                <a id="boton_reserva" href="reservations.html">Book Now</a>
             </div>
         </section>
 
@@ -160,7 +163,7 @@
             <picture>
                 <source media="(max-width: 600px)" srcset="images/scuba_banner_small.webp">
                 <source media="(max-width: 1000px)" srcset="images/scuba_banner_medium.webp">
-                <img src="images/scuba_banner.webp" alt="scuba diving" width="1900" height="600" loading="lazy">
+                <img src="images/scuba_banner.webp" alt="scuba diving" width="1300" height="300" loading="lazy">
             </picture>
         </div>
 
@@ -228,11 +231,14 @@
         <img id="footer_logo" src="images/scooter-logo.webp" alt="scoot_logo">
         <p id="firstParagraph">Copyright &copy; <span id="year"></span> | Cozumel Scoot, inc.</p>
     </footer>
+
     <script src="scripts/nav.js"></script>
     <!-- weather stuff -->
     <script src="scripts/getdates.js"></script>
     <script src="scripts/weatherScoots.js"></script>
     <script src="scripts/forecastScoots.js"></script>
+    <!-- alert -->
+    <script src="scripts/alert.js"></script>
 
 </body>
 

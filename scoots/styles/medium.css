@@ -1,8 +1,47 @@
 @media screen and (min-width: 600px) and (max-width:999px) {
 
+    /*---------------- MAIN PAGE ----------------*/
+    #Rental_card {
+        margin-top: -25%;
+        font-size: larger;
+        padding: 1.5rem;
+    }
 
+    .boton img {
+        position: absolute;
+        top: -5rem;
+        right: 12%;
+        margin-right: 0;
+        margin-top: 0;
+        max-width: 200px;
+        height: auto;
+    }
 
+    #boton_reserva {
+        position: absolute;
+        top: 12rem;
+        right: 13%;
+        margin-right: 0;
+        margin-top: 0;
+        font-size: 35px;
+    }
 
+    .alert {
+        font-size: larger;
+    }
+
+    .banner h2 {
+        font-size: 60px;
+        padding: 2rem;
+    }
+
+    #display_img {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 30px;
+    }
+
+    /*---------------- MAIN PAGE ----------------*/
 
 
     /*---------------- RENTAL PAGE ----------------*/
@@ -34,8 +73,34 @@
         margin-top: -25%;
     }
 
+    #info-r h2 {
+        text-align: center;
+    }
+
+    #info-r ol {
+        justify-content: center;
+    }
+
     #r_boton {
+        margin-left: 15rem;
         height: 70px;
-        width: 200px;
+        width: 250px;
+    }
+
+    #contact_info {
+        position: relative;
+        margin-top: -25%;
+    }
+
+    iframe {
+        height: 420px;
+    }
+
+
+
+    #c_boton {
+        height: 70px;
+        width: 250px;
+        margin-left: 15rem;
     }
 }

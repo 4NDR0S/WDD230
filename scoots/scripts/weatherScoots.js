@@ -15,7 +15,7 @@ async function apiFetch() {
         const response = await fetch(url);
         if (response.ok) {
             const data = await response.json();
-            console.log(data);  //para poder ver el archivo json en la consola
+            // console.log(data);  //para poder ver el archivo json en la consola
             displayResults(data);
 
         } else {
