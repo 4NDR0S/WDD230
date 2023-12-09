@@ -64,6 +64,11 @@
 
     /*---------------- HEADER ----------------*/
 
+    #mode {
+        top: 3.5rem;
+        left: 25%;
+    }
+
     .alert {
         font-size: x-large;
     }
@@ -265,6 +270,8 @@
 
     /*---------------- RESERVATION PAGE ----------------*/
 
+    /*---------------- CONTACT PAGE ----------------*/
+
     .contact-main {
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -278,6 +285,7 @@
         grid-row: 1/2;
         font-size: larger;
         height: 445px;
+        padding: 0.5rem 3rem;
     }
 
     #maps {
@@ -313,5 +321,21 @@
         margin-right: 0;
         height: 80px;
         width: 250px;
+    }
+
+    /*---------------- CONTACT PAGE ----------------*/
+
+    /* thank you page */
+    .thankyou {
+        grid-template-columns: 1fr 2fr 1fr;
+        grid-template-rows: 1fr;
+    }
+
+    #thankyou {
+        position: relative;
+        grid-column: 2/3;
+        text-align: center;
+        margin-top: -8%;
+        padding: 4rem;
     }
 }
