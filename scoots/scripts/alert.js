@@ -49,27 +49,27 @@ function displayAlert(data, text) {
 function displayAlterUvi(data, uvi) {
 
     if (data.current.uvi <= 2) {
-        uvi.innerHTML = `UV Index: ${data.current.uvi} | Low: Wear sunglasses and/or a hat.`;
+        uvi.innerHTML = `UV Index: ${Math.trunc(data.current.uvi)} | Low: Wear sunglasses and/or a hat.`;
         uvi.style.color = '#BCFFAF';
     }
 
     else if (data.current.uvi > 2 && data.current.uvi < 6) {
-        uvi.innerHTML = `UV Index: ${data.current.uvi} | Moderate: You should stay in the shade, during the mid-day hours, when the sun is strongest.`;
+        uvi.innerHTML = `UV Index: ${Math.trunc(data.current.uvi)} | Moderate: You should stay in the shade, during the mid-day hours, when the sun is strongest.`;
         uvi.style.color = '#F2FF00';
     }
 
     else if (data.current.uvi > 5 && data.current.uvi < 8) {
-        uvi.innerHTML = `UV Index: ${data.current.uvi} | High: Use sunscreen, wear light-colored, long-sleeved clothing.`;
+        uvi.innerHTML = `UV Index: ${Math.trunc(data.current.uvi)} | High: Use sunscreen, wear light-colored, long-sleeved clothing.`;
         uvi.style.color = '#FFB300';
     }
 
     else if (data.current.uvi > 7 && data.current.uvi < 11) {
-        uvi.innerHTML = `UV Index: ${data.current.uvi} | Very high: Avoid going outside.`;
+        uvi.innerHTML = `UV Index: ${Math.trunc(data.current.uvi)} | Very high: Avoid going outside.`;
         uvi.style.color = '#F39B9B';
     }
 
     else if (data.current.uvi >= 11) {
-        uvi.innerHTML = `UV Index: ${data.current.uvi} | Extreme: Avoid going outside.`;
+        uvi.innerHTML = `UV Index: ${Math.trunc(data.current.uvi)} | Extreme: Avoid going outside.`;
         uvi.style.color = '#D4A7F5';
     }
 }

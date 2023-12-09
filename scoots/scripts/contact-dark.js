@@ -8,19 +8,21 @@ themeSwitch.addEventListener('click', () => {
     const h3 = document.querySelectorAll('h3');
     const p = document.querySelectorAll('p');
     const li = document.querySelectorAll('li');
+    const footerp = document.querySelector('#footer_p');
 
 
     const legend = document.querySelectorAll('legend');
     const label = document.querySelectorAll('label');
 
     if (themeValue.checked) {
-        main.style.backgroundColor = "black";
+        main.style.backgroundColor = 'var(--dark-bg)';
 
-        card.forEach((i) => (i.style.setProperty('background-color', '#090040')));
+        card.forEach((i) => (i.style.setProperty('background-color', 'var(--dark-cards)')));
         h2.forEach((i) => (i.style.setProperty('color', 'white')));
         h3.forEach((i) => (i.style.setProperty('color', 'white')));
         p.forEach((i) => (i.style.setProperty('color', 'white')));
         li.forEach((i) => (i.style.setProperty('color', 'white')));
+        footerp.style.color = 'black';
 
         legend.forEach((i) => (i.style.setProperty('color', 'white')));
         label.forEach((i) => (i.style.setProperty('color', 'white')));
@@ -32,6 +34,7 @@ themeSwitch.addEventListener('click', () => {
         h3.forEach((i) => (i.style.setProperty('color', 'black')));
         p.forEach((i) => (i.style.setProperty('color', 'black')));
         li.forEach((i) => (i.style.setProperty('color', 'black')));
+        footerp.style.color = 'black';
 
         legend.forEach((i) => (i.style.setProperty('color', 'black')));
         label.forEach((i) => (i.style.setProperty('color', 'black')));

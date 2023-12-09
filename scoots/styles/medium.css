@@ -45,16 +45,16 @@
 
 
     /*---------------- RENTAL PAGE ----------------*/
-    .rentals-main table {
+    #rentals-main table {
         box-shadow: 0 0 20px var(--footer);
     }
 
-    .rentals-main table {
+    #rentals-main table {
         position: relative;
         margin-top: -25%;
     }
 
-    .rentals-main th {
+    #rentals-main th {
         padding: 1rem;
         font-size: 15px;
     }

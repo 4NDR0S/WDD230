@@ -170,22 +170,22 @@
 
     /*---------------- RENTAL PAGE ----------------*/
 
-    .rentals-main table {
+    #rentals-main table {
         box-shadow: 0 0 20px var(--footer);
     }
 
-    .rentals-main {
+    #rentals-main {
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: 330px 1fr;
     }
 
-    .rentals-main table {
+    #rentals-main table {
         position: relative;
         margin-top: -100px;
     }
 
-    .rentals-main th {
+    #rentals-main th {
         padding: 1rem;
         font-size: 20px;
     }
