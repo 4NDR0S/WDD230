@@ -56,12 +56,12 @@
 
     .rentals-main th {
         padding: 1rem;
-        font-size: 15px auto;
+        font-size: 15px;
     }
 
     td {
         padding: 8px 12px;
-        font-size: 13px auto;
+        font-size: 13px;
     }
 
     /*---------------- RENTAL PAGE ----------------*/
